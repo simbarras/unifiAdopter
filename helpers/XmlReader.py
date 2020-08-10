@@ -35,4 +35,5 @@ class XmlReader:
         mdp = controllerXml.find('mdp').text
         url = controllerXml.find('url').text
         port = controllerXml.find('port').text
-        return Controller(user, mdp, url, port)
+        timeout = controllerXml.find('timeout').text
+        return Controller(user, mdp, url, port, timeout)

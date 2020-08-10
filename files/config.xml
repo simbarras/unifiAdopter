@@ -11,5 +11,6 @@
         <mdp>ubnt</mdp>
         <url>telecomservices.ch</url>
         <port>55880</port>
+        <timeout>5</timeout>
     </controller>
 </config>

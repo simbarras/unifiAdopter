@@ -1,4 +1,5 @@
 import paramiko
+import socket
 
 
 class Ssh:
@@ -22,7 +23,7 @@ class Ssh:
         try:
             ssh = paramiko.SSHClient()
             ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-            ssh.connect(self.ip, self.port, self.username, self.password)
+            ssh.connect(self.ip, self.port, self.username, self.password, timeout=3)
 
             stdin, stdout, stderr = ssh.exec_command(
                 "/usr/bin/mca-cli-op set-inform http://unifi." + self.url + ":" + str(self.urlPort) + "/inform")
@@ -37,6 +38,8 @@ class Ssh:
                 return 'Errors: ' + errors
             else:
                 return 'No response'
+        except socket.timeout:
+            return 'Empty'
         except TimeoutError:
             return 'Empty'
         except paramiko.ssh_exception.NoValidConnectionsError:

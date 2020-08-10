@@ -3,7 +3,7 @@ from datetime import datetime
 from helpers.dateTools import dateTools
 from workers.Counter import Counter
 from workers.Ssh import Ssh
-from workers.XmlReader import XmlReader
+from helpers.XmlReader import XmlReader
 
 comptIte = 0
 comptVide = 0
@@ -26,10 +26,12 @@ print(
 print('User: ' + controllerAntenna.user)
 print('Password: ' + controllerAntenna.mdp)
 print('Url: http://unifi.' + controllerAntenna.url + ':' + str(controllerAntenna.port) + '/inform')
+print('Timeout: ' + str(controllerAntenna.timeout) + ' (Number of seconds before an address is set as empty)')
 
 counter = Counter(addresseSubnet)
 sshConnector = Ssh(controllerAntenna)
 
+print('############################################')
 dateStart = datetime.now()
 dtS_string = dateStart.strftime("%d/%m/%Y %H:%M:%S")
 print('Start at ' + dtS_string)
