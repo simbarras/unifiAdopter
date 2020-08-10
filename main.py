@@ -1,3 +1,6 @@
+from datetime import datetime
+
+from helpers.dateTools import dateTools
 from workers.Counter import Counter
 from workers.Ssh import Ssh
 from workers.XmlReader import XmlReader
@@ -27,7 +30,9 @@ print('Url: http://unifi.' + controllerAntenna.url + ':' + str(controllerAntenna
 counter = Counter(addresseSubnet)
 sshConnector = Ssh(controllerAntenna)
 
-print('Start at ')
+dateStart = datetime.now()
+dtS_string = dateStart.strftime("%d/%m/%Y %H:%M:%S")
+print('Start at ' + dtS_string)
 while compt > 0:
 
     ip = counter.counter()
@@ -54,7 +59,10 @@ while compt > 0:
     compt = compt - 1
     comptIte = comptIte + 1
 
-print('Finish at ')
-print("finish with " + str(comptIte) + " addresses tested: " + str(comptVide) + " empty, " + str(
+dateEnd = datetime.now()
+dtE_string = dateEnd.strftime("%d/%m/%Y %H:%M:%S")
+print("Finish at " + dtE_string + " with " + str(comptIte) + " addresses tested: " + str(comptVide) + " empty, " + str(
     comptIgn) + " ignored (" + str(comptIgnList) + " from the list), " + str(
     comptError) + " with error and " + str(comptOk) + " ok")
+hours, minutes, seconds = dateTools.convert_timedelta(abs(dateStart - dateEnd))
+print("Time: " + str(hours) + " hours " + str(minutes) + " minutes " + str(seconds) + " seconds")
