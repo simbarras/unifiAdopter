@@ -127,7 +127,7 @@
       <workItem from="1597086709170" duration="176000" />
       <workItem from="1597086888288" duration="154000" />
       <workItem from="1597087079659" duration="3326000" />
-      <workItem from="1597127441692" duration="11747000" />
+      <workItem from="1597127441692" duration="15244000" />
     </task>
     <task id="LOCAL-00001" summary="Add the time statistics">
       <created>1597084872315</created>
@@ -197,30 +197,42 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add the ignored IP to the start configuration" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="233" y="0" key="#Deployment" timestamp="1597144708637">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="0" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1597144708637" />
+    <state x="318" y="22" key="#Options" timestamp="1597144745581">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="318" y="22" key="#Options/0.0.1280.680@0.0.1280.680" timestamp="1597144745581" />
     <state x="276" y="114" width="728" height="525" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597128090011">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="276" y="114" width="728" height="525" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1597128090011" />
     <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597086876828" />
-    <state width="618" height="163" key="GridCell.Tab.0.bottom" timestamp="1597143585103">
+    <state x="484" y="248" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog" timestamp="1597150131918">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597143585103" />
+    <state x="484" y="248" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog/0.0.1280.680@0.0.1280.680" timestamp="1597150131918" />
+    <state width="618" height="163" key="GridCell.Tab.0.bottom" timestamp="1597151383539">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="618" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597151383539" />
     <state width="938" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351386" />
-    <state width="618" height="163" key="GridCell.Tab.0.center" timestamp="1597143585103">
+    <state width="618" height="163" key="GridCell.Tab.0.center" timestamp="1597151383538">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1597143585103" />
+    <state width="618" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1597151383538" />
     <state width="938" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351385" />
-    <state width="618" height="163" key="GridCell.Tab.0.left" timestamp="1597143585103">
+    <state width="618" height="163" key="GridCell.Tab.0.left" timestamp="1597151383538">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1597143585103" />
+    <state width="618" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1597151383538" />
     <state width="938" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351385" />
-    <state width="618" height="163" key="GridCell.Tab.0.right" timestamp="1597143585103">
+    <state width="618" height="163" key="GridCell.Tab.0.right" timestamp="1597151383539">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1597143585103" />
+    <state width="618" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1597151383539" />
     <state width="938" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351385" />
     <state x="184" y="86" key="MergeDialog" timestamp="1597087198977">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -251,6 +263,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/unifiAdopterGit$main.coverage" NAME="main Coverage Results" MODIFIED="1597090351375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/unifiAdopter$main.coverage" NAME="main Coverage Results" MODIFIED="1597143585090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/unifiAdopter$main.coverage" NAME="main Coverage Results" MODIFIED="1597151383524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
