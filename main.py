@@ -1,9 +1,10 @@
+import os
 from datetime import datetime
 
-from helpers.dateTools import dateTools
+from helpers.DateTools import DateTools
+from helpers.XmlReader import XmlReader
 from workers.Counter import Counter
 from workers.Ssh import Ssh
-from helpers.XmlReader import XmlReader
 
 comptIte = 0
 comptVide = 0
@@ -31,7 +32,7 @@ modify = input('Would you like to modify the informations ? (y/n) [n]: ')
 if modify.__eq__('y'):
     subnet = input('subnet [' + str(addresseSubnet.ip1) + '.' + str(addresseSubnet.ip2) + '.' + str(
         addresseSubnet.ip3) + '.' + str(addresseSubnet.ip4) + ']: ')
-    if not subnet.__eq__(''):
+    if subnet:
         ip1, ip2, ip3, ip4 = subnet.split('.', 4)
         addresseSubnet.ip1 = int(ip1)
         addresseSubnet.ip2 = int(ip2)
@@ -39,28 +40,40 @@ if modify.__eq__('y'):
         addresseSubnet.ip4 = int(ip4)
 
     mask = input('Mask [' + str(addresseSubnet.mask) + ']: ')
-    if not mask.__eq__(''):
+    if mask:
         addresseSubnet.mask = int(mask)
 
     user = input('User [' + controllerAntenna.user + ']: ')
-    if not user.__eq__(''):
+    if user:
         controllerAntenna.user = user
 
     password = input('Password [' + controllerAntenna.mdp + ']: ')
-    if not password.__eq__(''):
+    if password:
         controllerAntenna.mdp = password
 
     url = input('Url [' + controllerAntenna.url + ']: ')
-    if not url.__eq__(''):
+    if url:
         controllerAntenna.url = url
 
     port = input('Port [' + str(controllerAntenna.port) + ']: ')
-    if not port.__eq__(''):
+    if port:
         controllerAntenna.port = int(port)
 
     timeout = input('Timeout: [' + str(controllerAntenna.timeout) + ']: ')
-    if not timeout.__eq__(''):
+    if timeout:
         controllerAntenna.mdp = int(timeout)
+
+    seeAddressesIgnored = input('Would you like to see the ignored ip ? (y/n) [n]: ')
+
+    if seeAddressesIgnored.__eq__('y'):
+        addIp = input('Tip the addresse you will add (None = no): ')
+        for ip in ignoredIp:
+            print(ip)
+
+        while addIp:
+            ignoredIp.append(addIp)
+            print(addIp)
+            addIp = input('')
 
 compt = 2 ** (32 - addresseSubnet.mask) - 2
 counter = Counter(addresseSubnet)
@@ -104,5 +117,5 @@ dtE_string = dateEnd.strftime("%d/%m/%Y %H:%M:%S")
 print("Finish at " + dtE_string + " with " + str(comptIte) + " addresses tested: " + str(comptVide) + " empty, " + str(
     comptIgn) + " ignored (" + str(comptIgnList) + " from the list), " + str(
     comptError) + " with error and " + str(comptOk) + " ok")
-hours, minutes, seconds = dateTools.convert_timedelta(abs(dateStart - dateEnd))
+hours, minutes, seconds = DateTools.convert_timedelta(abs(dateStart - dateEnd))
 print("Time: " + str(hours) + " hours " + str(minutes) + " minutes " + str(seconds) + " seconds")

@@ -1,4 +1,4 @@
-class dateTools:
+class DateTools:
     def convert_timedelta(duration):
         days, seconds = duration.days, duration.seconds
         hours = days * 24 + seconds // 3600
