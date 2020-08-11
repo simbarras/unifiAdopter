@@ -1,4 +1,3 @@
-import os
 from datetime import datetime
 
 from helpers.DateTools import DateTools
