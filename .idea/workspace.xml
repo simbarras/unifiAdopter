@@ -82,7 +82,7 @@
       <recent name="C:\Users\simon\PycharmProjects\unifiAdopterGit\helpers" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="unifiAdopterGit" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -105,9 +105,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="testModuleDeploy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="unifiAdopterGit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/testModuleDeploy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.testModuleDeploy" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.testModuleDeploy" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main" />
@@ -127,7 +154,7 @@
       <workItem from="1597086709170" duration="176000" />
       <workItem from="1597086888288" duration="154000" />
       <workItem from="1597087079659" duration="3326000" />
-      <workItem from="1597127441692" duration="15244000" />
+      <workItem from="1597127441692" duration="18236000" />
     </task>
     <task id="LOCAL-00001" summary="Add the time statistics">
       <created>1597084872315</created>
@@ -214,25 +241,25 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="484" y="248" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog/0.0.1280.680@0.0.1280.680" timestamp="1597150131918" />
-    <state width="618" height="163" key="GridCell.Tab.0.bottom" timestamp="1597151383539">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1597154394703">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597151383539" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597154394703" />
     <state width="938" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351386" />
-    <state width="618" height="163" key="GridCell.Tab.0.center" timestamp="1597151383538">
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1597154394703">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1597151383538" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1597154394703" />
     <state width="938" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351385" />
-    <state width="618" height="163" key="GridCell.Tab.0.left" timestamp="1597151383538">
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1597154394703">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1597151383538" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1597154394703" />
     <state width="938" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351385" />
-    <state width="618" height="163" key="GridCell.Tab.0.right" timestamp="1597151383539">
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1597154394703">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1597151383539" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1597154394703" />
     <state width="938" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351385" />
     <state x="184" y="86" key="MergeDialog" timestamp="1597087198977">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -263,6 +290,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/unifiAdopterGit$main.coverage" NAME="main Coverage Results" MODIFIED="1597090351375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/unifiAdopter$main.coverage" NAME="main Coverage Results" MODIFIED="1597151383524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/unifiAdopter$main.coverage" NAME="main Coverage Results" MODIFIED="1597154394687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/unifiAdopter$testModuleDeploy.coverage" NAME="testModuleDeploy Coverage Results" MODIFIED="1597152788510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
 </project>
