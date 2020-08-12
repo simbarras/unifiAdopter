@@ -9,5 +9,4 @@ setuptools.setup(
      author="Simon Barras",
      author_email="simon.barras02@gmail.com",
      url="https://github.com/simbarras/unifiAdopter",
-     packages=setuptools.find_packages(),
 )
