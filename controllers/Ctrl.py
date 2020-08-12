@@ -114,7 +114,7 @@ class Ctrl:
         dtS_string = self.dateStart.strftime("%d/%m/%Y %H:%M:%S")
         print('Start at ' + dtS_string)
 
-    def run(self):
+    def scan(self):
         while self.compt > 0:
 
             ip = self.counter.counter()
