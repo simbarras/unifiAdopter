@@ -3,7 +3,7 @@ import sys
 
 from controllers.Ctrl import Ctrl
 
-def start():
+def run():
     ctrl = Ctrl()
     ctrl.load()
 
@@ -26,4 +26,4 @@ def start():
 print(sys.version)
 os.getcwd()
 
-start()
+run()
