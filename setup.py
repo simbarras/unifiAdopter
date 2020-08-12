@@ -1,9 +1,13 @@
-from setuptools import setup
+import setuptools
 
-setup(
+setuptools.setup(
     name='unifiAdopter',
     version='2.5.1',
     description='Python project who add automaticly all antenna from a subnet to a distant controller',
     py_modules=["unifiAdopter"],
     package_dir={'': 'src'},
+     author="Simon Barras",
+     author_email="simon.barras02@gmail.com",
+     url="https://github.com/simbarras/unifiAdopter",
+     packages=setuptools.find_packages(),
 )
