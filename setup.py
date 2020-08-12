@@ -9,7 +9,7 @@ setuptools.setup(
     author="Simon Barras",
     author_email="simon.barras02@gmail.com",
     url="https://github.com/simbarras/unifiAdopter",
-    scripts=['unifiAdopter.py'],
+    scripts=['src/unifiAdopter.py'],
     install_requires=["paramiko >= 2.7.1"],
     extras_requires={"dev": [
         "pytest>=3.7", ],
