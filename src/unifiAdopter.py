@@ -1,7 +1,7 @@
 import os
 import sys
 
-from controllers.Ctrl import Ctrl
+from Ctrl import Ctrl
 
 def run():
     ctrl = Ctrl()

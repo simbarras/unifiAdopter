@@ -1,9 +1,9 @@
 from datetime import datetime
 
-from helpers.DateTools import DateTools
-from helpers.XmlReader import XmlReader
-from workers.Counter import Counter
-from workers.Ssh import Ssh
+from XmlReader import XmlReader
+from DateTools import DateTools
+from Counter import Counter
+from Ssh import Ssh
 
 
 class Ctrl:
