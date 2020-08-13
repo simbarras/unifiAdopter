@@ -16,7 +16,7 @@ How to install unifiAdopter on Raspberry.
 - Perform the following commands:
 ```
 sudo echo '' > install-unifiAdopter.sh
-sudo chown root_root install-unifiAdopter.sh
+sudo chown root:root install-unifiAdopter.sh
 sudo chmod 4777 install-unifiAdopter.sh
 sudo nano install-unifiAdopter.sh
 ```
