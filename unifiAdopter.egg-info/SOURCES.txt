@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/__init__.py
+src/unifiAdopter.py
+unifiAdopter.egg-info/PKG-INFO
+unifiAdopter.egg-info/SOURCES.txt
+unifiAdopter.egg-info/dependency_links.txt
+unifiAdopter.egg-info/requires.txt
+unifiAdopter.egg-info/top_level.txt
