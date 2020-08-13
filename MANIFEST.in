@@ -1,0 +1,2 @@
+include src/files/config.xml
+include src/files/ignoredIp.xml
