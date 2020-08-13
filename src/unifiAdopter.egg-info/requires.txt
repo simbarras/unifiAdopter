@@ -1,1 +1,4 @@
 paramiko>=2.7.1
+
+[dev]
+pytest>=3.7
