@@ -16,8 +16,7 @@ How to install unifiAdopter on Raspberry.
 - Perform the following commands:
 ```
 sudo echo '' > install-unifiAdopter.sh
-sudo chown root:root install-unifiAdopter.sh
-sudo chmod 4777 install-unifiAdopter.sh
+sudo chmod 777 install-unifiAdopter.sh
 sudo nano install-unifiAdopter.sh
 ```
 Write this to the file:
@@ -54,17 +53,11 @@ echo 'python3 '$SOURCE'unifiAdopter.py' >> $DESKTOP'run-unifiiAdopter.sh'
 echo 'python3 '$SOURCE'unifiAdopter.py -noAsk' >> $DESKTOP'runNoAsk-unifiiAdopter.sh'
 echo 'pip3 install -e git+https://github.com/simbarras/unifiAdopter.git#egg=unifiAdopter -U' >> $DESKTOP'update-unifiiAdopter.sh'
 
-chown root:root $DESKTOP'config-unifiiAdopter.sh'
-chown root:root $DESKTOP'ignoredIp-unifiiAdopter.sh'
-chown root:root $DESKTOP'run-unifiiAdopter.sh'
-chown root:root $DESKTOP'runNoAsk-unifiiAdopter.sh'
-chown root:root $DESKTOP'update-unifiiAdopter.sh'
-
-chmod 4777 $DESKTOP'config-unifiiAdopter.sh'
-chmod 4777 $DESKTOP'ignoredIp-unifiiAdopter.sh'
-chmod 4777 $DESKTOP'run-unifiiAdopter.sh'
-chmod 4777 $DESKTOP'runNoAsk-unifiiAdopter.sh'
-chmod 4777 $DESKTOP'update-unifiiAdopter.sh'
+chmod 777 $DESKTOP'config-unifiiAdopter.sh'
+chmod 777 $DESKTOP'ignoredIp-unifiiAdopter.sh'
+chmod 777 $DESKTOP'run-unifiiAdopter.sh'
+chmod 777 $DESKTOP'runNoAsk-unifiiAdopter.sh'
+chmod 777 $DESKTOP'update-unifiiAdopter.sh'
 
 #rm /home/pi/install-unifiAdopter.sh
 
