@@ -12,7 +12,7 @@ class XmlReader:
 
     def __init__(self, file):
         self.file = file
-        self.tree = ET.parse('files/' + self.file + '.xml')
+        self.tree = ET.parse('../files/' + self.file + '.xml')
         self.tRoot = self.tree.getroot()
 
     def readIgnoredIp(self):
