@@ -14,7 +14,7 @@ class XmlReader:
     def __init__(self, file):
         script_dir = os.path.dirname(__file__)
         self.file = file
-        self.tree = ET.parse(script_dir + 'files/' + self.file + '.xml')
+        self.tree = ET.parse(script_dir + '/files/' + self.file + '.xml')
         self.tRoot = self.tree.getroot()
 
     def readIgnoredIp(self):
