@@ -107,19 +107,19 @@ echo 'Reboot for the command'
 ## Use
 You need to use the user "pi" and make the command `cd` to be in the folder `/home/pi`.
 - Help:
-`tail ./unfiAdopter.help` or `unifiA-`
+`tail ./unifiAdopter.help` or `unifiA-`
 
 - Configure the parameters:
-`./config-unfiAdopter.sh` or `unifiA-config`
+`./config-unifiAdopter.sh` or `unifiA-config`
 
 - Configure the list of IPs ignored:
-`./ignoredIp-unfiAdopter.sh` or `unifiA-ignoredIp`
+`./ignoredIp-unifiAdopter.sh` or `unifiA-ignoredIp`
 
 - Launch the application:
-`./run-unfiAdopter.sh` or `unifiA-run`
+`./run-unifiAdopter.sh` or `unifiA-run`
 
 - Launch the application without questioning:
-`./runNoAsk-unfiAdopter.sh` or `unifiA-runNoAsk`
+`./runNoAsk-unifiAdopter.sh` or `unifiA-runNoAsk`
 
 - Update the application:
 `sudo ./update-unifiAdopter.sh` or `unifiA-update`
