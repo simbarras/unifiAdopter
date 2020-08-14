@@ -105,6 +105,7 @@ echo 'Reboot for the command'
 #
 ````
 ## Use
+You need to use the user "pi" and make the command `cd` to be in the folder `/home/pi`.
 - Help:
 `tail ./unfiAdopter.help` or `unifiA-`
 
@@ -118,7 +119,7 @@ echo 'Reboot for the command'
 `./run-unfiAdopter.sh` or `unifiA-run`
 
 - Launch the application without questioning:
-`/runNoAsk-unfiAdopter.sh` or `unifiA-runNoAsk`
+`./runNoAsk-unfiAdopter.sh` or `unifiA-runNoAsk`
 
 - Update the application:
 `sudo ./update-unifiAdopter.sh` or `unifiA-update`
