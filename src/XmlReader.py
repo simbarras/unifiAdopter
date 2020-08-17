@@ -81,6 +81,6 @@ class XmlReader:
 
     def writeFile(self):
         self.tree.write(self.file)
-        parser = etree.XMLParser(remove_blank_text=True)
-        formatTree = etree.parse(self.file, parser)
+        # parser = etree.XMLParser(remove_blank_text=True)
+        formatTree = etree.parse(self.file)
         formatTree.write(self.file, pretty_print=True)
