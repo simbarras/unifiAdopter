@@ -123,6 +123,10 @@ class Ctrl:
                     if not self.ignoredIpReader.writeIgnoredIp(self.ignoredIp):
                         print('Error when writing the IP file')
 
+        runScan = input('Would you like to run the scan ? (y/n) [y]: ')
+        if runScan.__eq__('n'):
+            return False
+
         addressesIgnored = input('Would you like to add automatically the non-valid ip to the file ? (y/n) [n]: ')
         if addressesIgnored.__eq__('y'):
             self.addAutomaticallyIp = True
