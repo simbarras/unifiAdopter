@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 import os
+import lxml.etree as etree
 
 from beans.Addresse import Addresse
 from beans.Controller import Controller
@@ -57,7 +58,7 @@ class XmlReader:
         controllerXml.find('port').text = str(controllerAntenna.port)
         controllerXml.find('timeout').text = str(controllerAntenna.timeout)
 
-        self.tree.write(self.file)
+        self.writeFile()
 
         result = True
         return result
@@ -73,7 +74,12 @@ class XmlReader:
             ipTree = ET.SubElement(self.tRoot, 'ip')
             ipTree.text = ip
 
-        self.tree.write(self.file)
+        self.writeFile()
 
         result = True
         return result
+
+    def writeFile(self):
+        self.tree.write(self.file)
+        formatTree = etree.parse(self.file)
+        etree.write(formatTree, pretty_print=True)

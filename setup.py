@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='unifiAdopter',
-    version='2.6.0',
+    version='2.6.1',
     description='Python project who add automaticly all antenna from a subnet to a distant controller',
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -16,7 +16,7 @@ setuptools.setup(
     author_email="simon.barras02@gmail.com",
     url="https://github.com/simbarras/unifiAdopter",
     # scripts=['src/unifiAdopter.py', ''],
-    install_requires=["paramiko >= 2.7.1"],
+    install_requires=["paramiko >= 2.7.1", "lxml >= 4.5.2"],
     package_data={'files': ['*.xml', 'src/files/*.xml']},
     include_package_data=True,
     extras_require={"dev": [
