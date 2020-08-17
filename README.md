@@ -12,7 +12,7 @@ How to install unifiAdopter on Raspberry.
 - Download and write the 'Raspberry Pi OS (32-bit) with desktop' image.
 - Configure the Raspberry
 - Download and configure the 'TeamViewer' application.
-- Enable booting on the console.
+- Add this line `hdmi_force_hotplug=1` to `/boot/config.txt`
 - Perform the following commands:
 ```
 echo '' > install-unifiAdopter.sh
