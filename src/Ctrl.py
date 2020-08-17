@@ -87,8 +87,8 @@ class Ctrl:
             if timeout:
                 self.controllerAntenna.timeout = int(timeout)
 
-            ovewriteConfigFile = input('Would you like to overwrite config file ? (y/n) [n]: ')
-            if ovewriteConfigFile.__eq__('y'):
+            overwriteConfigFile = input('Would you like to overwrite config file ? (y/n) [n]: ')
+            if overwriteConfigFile.__eq__('y'):
                 if not self.configReader.writeConfig(self.addressSubnet, self.controllerAntenna):
                     print('Error when writing the configuration file')
 
@@ -118,8 +118,8 @@ class Ctrl:
 
                 self.ignoredIp = newIgnoredIp
 
-                ovewriteIpfile = input('Would you like to add new ip to the file ? (y/n) [n]: ')
-                if ovewriteIpfile.__eq__('y'):
+                overwriteIpfile = input('Would you like to add new ip to the file ? (y/n) [n]: ')
+                if overwriteIpfile.__eq__('y'):
                     if not self.ignoredIpReader.writeIgnoredIp(self.ignoredIp):
                         print('Error when writing the IP file')
 
