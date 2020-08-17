@@ -13,8 +13,8 @@ class XmlReader:
 
     def __init__(self, file):
         script_dir = os.path.dirname(__file__)
-        self.file = file
-        self.tree = ET.parse(script_dir + '/files/' + self.file + '.xml')
+        self.file = script_dir + '/files/' + file + '.xml'
+        self.tree = ET.parse(self.file)
         self.tRoot = self.tree.getroot()
 
     def readIgnoredIp(self):
@@ -22,7 +22,7 @@ class XmlReader:
             self.ignoredIp.append(child.text)
         return self.ignoredIp
 
-    def readConfigAdresses(self):
+    def readConfigAddresses(self):
         adresseXml = self.tRoot.find('addresse')
         ip1 = adresseXml.find('ip1').text
         ip2 = adresseXml.find('ip2').text
@@ -39,3 +39,41 @@ class XmlReader:
         port = controllerXml.find('port').text
         timeout = controllerXml.find('timeout').text
         return Controller(user, mdp, url, port, timeout)
+
+    def writeConfig(self, addresseSubnet, controllerAntenna):
+        result = False
+
+        adresseXml = self.tRoot.find('addresse')
+        adresseXml.find('ip1').text = str(addresseSubnet.ip1)
+        adresseXml.find('ip2').text = str(addresseSubnet.ip2)
+        adresseXml.find('ip3').text = str(addresseSubnet.ip3)
+        adresseXml.find('ip4').text = str(addresseSubnet.ip4)
+        adresseXml.find('mask').text = str(addresseSubnet.mask)
+
+        controllerXml = self.tRoot.find('controller')
+        controllerXml.find('user').text = str(controllerAntenna.user)
+        controllerXml.find('mdp').text = str(controllerAntenna.mdp)
+        controllerXml.find('url').text = str(controllerAntenna.url)
+        controllerXml.find('port').text = str(controllerAntenna.port)
+        controllerXml.find('timeout').text = str(controllerAntenna.timeout)
+
+        self.tree.write(self.file)
+
+        result = True
+        return result
+
+    def writeIgnoredIp(self, ignoredIp):
+        result = False
+
+        childs = self.tRoot.findall('ip')
+        for child in childs:
+            self.tRoot.remove(child)
+
+        for ip in ignoredIp:
+            ipTree = ET.SubElement(self.tRoot, 'ip')
+            ipTree.text = ip
+
+        self.tree.write(self.file)
+
+        result = True
+        return result

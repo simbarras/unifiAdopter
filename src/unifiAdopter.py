@@ -14,7 +14,7 @@ def run():
 
     continu = True
     if preStart:
-        continu = ctrl.preStart()
+        continu = ctrl.prestart()
 
     if continu:
         ctrl.start()

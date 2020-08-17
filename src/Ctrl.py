@@ -15,7 +15,11 @@ class Ctrl:
     comptError = 0
     comptOk = 0
 
-    addresseSubnet = None
+    addAutomaticallyIp = False
+
+    configReader = None
+    ignoredIpReader = None
+    addressSubnet = None
     controllerAntenna = None
     ignoredIp = []
 
@@ -26,17 +30,17 @@ class Ctrl:
     dateEnd = None
 
     def __init__(self):
-        configReader = XmlReader("config")
-        self.addresseSubnet = configReader.readConfigAdresses()
-        self.controllerAntenna = configReader.readConfigController()
-        ignoredIpReader = XmlReader("ignoredIp")
-        self.ignoredIp = ignoredIpReader.readIgnoredIp()
+        self.configReader = XmlReader("config")
+        self.addressSubnet = self.configReader.readConfigAddresses()
+        self.controllerAntenna = self.configReader.readConfigController()
+        self.ignoredIpReader = XmlReader("ignoredIp")
+        self.ignoredIp = self.ignoredIpReader.readIgnoredIp()
 
     def load(self):
         print(
-            'Addresses: ' + str(self.addresseSubnet.ip1) + '.' + str(self.addresseSubnet.ip2) + '.' + str(
-                self.addresseSubnet.ip3) + '.' + str(
-                self.addresseSubnet.ip4) + ' /' + str(self.addresseSubnet.mask))
+            'Addresses: ' + str(self.addressSubnet.ip1) + '.' + str(self.addressSubnet.ip2) + '.' + str(
+                self.addressSubnet.ip3) + '.' + str(
+                self.addressSubnet.ip4) + ' /' + str(self.addressSubnet.mask))
         print('User: ' + self.controllerAntenna.user)
         print('Password: ' + self.controllerAntenna.mdp)
         print('Url: http://unifi.' + self.controllerAntenna.url + ':' + str(self.controllerAntenna.port) + '/inform')
@@ -44,72 +48,94 @@ class Ctrl:
             self.controllerAntenna.timeout) + ' (Number of seconds before an address is set as empty)')
         print('Ignored ip: ' + str(len(self.ignoredIp)))
 
-    def preStart(self):
+    def prestart(self):
         modify = input('Would you like to modify the informations ? (y/n) [n]: ')
 
         if modify.__eq__('y'):
 
-            continu = input('Would you like to continue ? (y/n) [y]: ')
+            subnet = input(
+                'subnet [' + str(self.addressSubnet.ip1) + '.' + str(self.addressSubnet.ip2) + '.' + str(
+                    self.addressSubnet.ip3) + '.' + str(self.addressSubnet.ip4) + ']: ')
+            if subnet:
+                ip1, ip2, ip3, ip4 = subnet.split('.', 4)
+                self.addressSubnet.ip1 = int(ip1)
+                self.addressSubnet.ip2 = int(ip2)
+                self.addressSubnet.ip3 = int(ip3)
+                self.addressSubnet.ip4 = int(ip4)
 
-            if continu.__eq__('n'):
-                return False
-            else:
-                subnet = input(
-                    'subnet [' + str(self.addresseSubnet.ip1) + '.' + str(self.addresseSubnet.ip2) + '.' + str(
-                        self.addresseSubnet.ip3) + '.' + str(self.addresseSubnet.ip4) + ']: ')
-                if subnet:
-                    ip1, ip2, ip3, ip4 = subnet.split('.', 4)
-                    self.addresseSubnet.ip1 = int(ip1)
-                    self.addresseSubnet.ip2 = int(ip2)
-                    self.addresseSubnet.ip3 = int(ip3)
-                    self.addresseSubnet.ip4 = int(ip4)
+            mask = input('Mask [' + str(self.addressSubnet.mask) + ']: ')
+            if mask:
+                self.addressSubnet.mask = int(mask)
 
-                mask = input('Mask [' + str(self.addresseSubnet.mask) + ']: ')
-                if mask:
-                    self.addresseSubnet.mask = int(mask)
+            user = input('User [' + self.controllerAntenna.user + ']: ')
+            if user:
+                self.controllerAntenna.user = user
 
-                user = input('User [' + self.controllerAntenna.user + ']: ')
-                if user:
-                    self.controllerAntenna.user = user
+            password = input('Password [' + self.controllerAntenna.mdp + ']: ')
+            if password:
+                self.controllerAntenna.mdp = password
 
-                password = input('Password [' + self.controllerAntenna.mdp + ']: ')
-                if password:
-                    self.controllerAntenna.mdp = password
+            url = input('Url [' + self.controllerAntenna.url + ']: ')
+            if url:
+                self.controllerAntenna.url = url
 
-                url = input('Url [' + self.controllerAntenna.url + ']: ')
-                if url:
-                    self.controllerAntenna.url = url
+            port = input('Port [' + str(self.controllerAntenna.port) + ']: ')
+            if port:
+                self.controllerAntenna.port = int(port)
 
-                port = input('Port [' + str(self.controllerAntenna.port) + ']: ')
-                if port:
-                    self.controllerAntenna.port = int(port)
+            timeout = input('Timeout: [' + str(self.controllerAntenna.timeout) + ']: ')
+            if timeout:
+                self.controllerAntenna.timeout = int(timeout)
 
-                timeout = input('Timeout: [' + str(self.controllerAntenna.timeout) + ']: ')
-                if timeout:
-                    self.controllerAntenna.mdp = int(timeout)
+            ovewriteConfigFile = input('Would you like to overwrite config file ? (y/n) [n]: ')
+            if ovewriteConfigFile.__eq__('y'):
+                if not self.configReader.writeConfig(self.addressSubnet, self.controllerAntenna):
+                    print('Error when writing the configuration file')
 
-                seeAddressesIgnored = input('Would you like to see the ignored ip ? (y/n) [n]: ')
+        seeAddressesIgnored = input('Would you like to see the ignored ip ? (y/n) [n]: ')
 
-                if seeAddressesIgnored.__eq__('y'):
-                    print('Tip the addresse you will add (None = no): ')
-                    for ip in self.ignoredIp:
-                        print(ip)
+        if seeAddressesIgnored.__eq__('y'):
+            print('Tip the address you will add (None = no): ')
+            for ip in self.ignoredIp:
+                print(ip)
 
+            modifAddressesIgnored = input('Would you like to modify the ignored ip list? (y/n) [n]: ')
+            if modifAddressesIgnored.__eq__('y'):
+                print('Writes the replacement address (None = no change / - = delete): ')
+                newIgnoredIp = []
+                for ip in self.ignoredIp:
+                    newAddress = input(ip+' :')
+                    if not newAddress:
+                        newIgnoredIp.append(ip)
+                    elif not newAddress.__eq__('-'):
+                        newIgnoredIp.append(newAddress)
+
+                print('Writes new address (None = no): ')
+                addIp = input('')
+                while addIp:
+                    newIgnoredIp.append(addIp)
                     addIp = input('')
-                    while addIp:
-                        self.ignoredIp.append(addIp)
-                        print(addIp)
-                        addIp = input('')
+
+                self.ignoredIp = newIgnoredIp
+
+                ovewriteIpfile = input('Would you like to add new ip to the file ? (y/n) [n]: ')
+                if ovewriteIpfile.__eq__('y'):
+                    if not self.ignoredIpReader.writeIgnoredIp(self.ignoredIp):
+                        print('Error when writing the IP file')
+
+        addressesIgnored = input('Would you like to add automatically the non-valid ip to the file ? (y/n) [n]: ')
+        if addressesIgnored.__eq__('y'):
+            self.addAutomaticallyIp = True
 
         return True
 
     def start(self):
-        self.compt = 2 ** (32 - self.addresseSubnet.mask) - 2
-        self.counter = Counter(self.addresseSubnet)
+        self.compt = 2 ** (32 - self.addressSubnet.mask) - 2
+        self.counter = Counter(self.addressSubnet)
         self.sshConnector = Ssh(self.controllerAntenna)
 
         print(
-            '###############################################################################################################')
+            '#########################################################################################################')
         self.dateStart = datetime.now()
         dtS_string = self.dateStart.strftime("%d/%m/%Y %H:%M:%S")
         print('Start at ' + dtS_string)
@@ -120,8 +146,7 @@ class Ctrl:
             ip = self.counter.counter()
             print(ip, end=': ', flush=True)
             try:
-                index = self.ignoredIp.index(ip)
-                del self.ignoredIp[index]
+                self.ignoredIp.index(ip)
                 self.comptIgn = self.comptIgn + 1
                 self.comptIgnList = self.comptIgnList + 1
                 print("Ignored from the list")
@@ -130,10 +155,16 @@ class Ctrl:
                 if result.__eq__('Ok'):
                     self.comptOk = self.comptOk + 1
                 elif result.__eq__('Empty'):
+                    if self.addAutomaticallyIp:
+                        self.ignoredIp.append(ip)
                     self.comptVide = self.comptVide + 1
                 elif result.__eq__('Ignored'):
+                    if self.addAutomaticallyIp:
+                        self.ignoredIp.append(ip)
                     self.comptIgn = self.comptIgn + 1
                 else:
+                    if self.addAutomaticallyIp:
+                        self.ignoredIp.append(ip)
                     self.comptError = self.comptError + 1
 
                 print(result)
@@ -143,8 +174,9 @@ class Ctrl:
 
     def finish(self):
         print(
-            '###############################################################################################################')
-
+            '#########################################################################################################')
+        if self.addAutomaticallyIp:
+            self.ignoredIpReader.writeIgnoredIp(self.ignoredIp)
         self.dateEnd = datetime.now()
         dtE_string = self.dateEnd.strftime("%d/%m/%Y %H:%M:%S")
         print("Finish at " + dtE_string + " with " + str(self.comptIte) + " addresses tested: " + str(
