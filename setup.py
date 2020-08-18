@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='unifiAdopter',
-    version='2.6.1',
+    version='2.6.2',
     description='Python project who add automaticly all antenna from a subnet to a distant controller',
     long_description=long_description,
     long_description_content_type="text/markdown",
