@@ -120,6 +120,9 @@ class Ctrl:
                 if not self.configReader.writeConfig(self.addressSubnet, self.controllerAntenna):
                     print('Error when writing the configuration file')
 
+        elif modify.__eq__('kebab83'):
+            print('Très très bon kebab')
+
         seeAddressesIgnored = input('Would you like to see the ignored ip ? (y/n) [n]: ')
 
         if seeAddressesIgnored.__eq__('y'):
