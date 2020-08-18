@@ -1,9 +1,10 @@
-import xml.etree.ElementTree as ET
 import os
-import lxml.etree as etree
+import xml.etree.ElementTree as ET
 
 from beans.Addresse import Addresse
 from beans.Controller import Controller
+
+import lxml.etree as etree
 
 
 class XmlReader:
@@ -30,7 +31,9 @@ class XmlReader:
         ip3 = adresseXml.find('ip3').text
         ip4 = adresseXml.find('ip4').text
         mask = adresseXml.find('mask').text
-        return Addresse(ip1, ip2, ip3, ip4, mask)
+        rangeStart = adresseXml.find('rangeStart').text
+        rangeEnd = adresseXml.find('rangeEnd').text
+        return Addresse(ip1, ip2, ip3, ip4, mask, rangeStart, rangeEnd)
 
     def readConfigController(self):
         controllerXml = self.tRoot.find('controller')
@@ -41,15 +44,21 @@ class XmlReader:
         timeout = controllerXml.find('timeout').text
         return Controller(user, mdp, url, port, timeout)
 
-    def writeConfig(self, addresseSubnet, controllerAntenna):
+    def writeConfig(self, addressSubnet, controllerAntenna):
         result = False
 
         adresseXml = self.tRoot.find('addresse')
-        adresseXml.find('ip1').text = str(addresseSubnet.ip1)
-        adresseXml.find('ip2').text = str(addresseSubnet.ip2)
-        adresseXml.find('ip3').text = str(addresseSubnet.ip3)
-        adresseXml.find('ip4').text = str(addresseSubnet.ip4)
-        adresseXml.find('mask').text = str(addresseSubnet.mask)
+        adresseXml.find('ip1').text = str(addressSubnet.ip1)
+        adresseXml.find('ip2').text = str(addressSubnet.ip2)
+        adresseXml.find('ip3').text = str(addressSubnet.ip3)
+        adresseXml.find('ip4').text = str(addressSubnet.ip4)
+        adresseXml.find('mask').text = str(addressSubnet.mask)
+        adresseXml.find('rangeStart').text = str(addressSubnet.rangeStart1) + '.' + str(
+            addressSubnet.rangeStart2) + '.' + str(
+            addressSubnet.rangeStart3) + '.' + str(addressSubnet.rangeStart4)
+        adresseXml.find('rangeEnd').text = str(addressSubnet.rangeEnd1) + '.' + str(
+            addressSubnet.rangeEnd2) + '.' + str(
+            addressSubnet.rangeEnd3) + '.' + str(addressSubnet.rangeEnd4)
 
         controllerXml = self.tRoot.find('controller')
         controllerXml.find('user').text = str(controllerAntenna.user)

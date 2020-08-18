@@ -5,6 +5,8 @@
         <ip3>100</ip3>
         <ip4>64</ip4>
         <mask>29</mask>
+        <rangeStart>10.11.100.66</rangeStart>
+        <rangeEnd>10.11.100.67</rangeEnd>
     </addresse>
     <controller>
         <user>ubnt</user>

@@ -1,9 +1,9 @@
 from datetime import datetime
 
-from XmlReader import XmlReader
-from DateTools import DateTools
 from Counter import Counter
+from DateTools import DateTools
 from Ssh import Ssh
+from XmlReader import XmlReader
 
 
 class Ctrl:
@@ -12,6 +12,7 @@ class Ctrl:
     comptVide = 0
     comptIgn = 0
     comptIgnList = 0
+    comptNotInRange = 0
     comptError = 0
     comptOk = 0
 
@@ -41,6 +42,11 @@ class Ctrl:
             'Addresses: ' + str(self.addressSubnet.ip1) + '.' + str(self.addressSubnet.ip2) + '.' + str(
                 self.addressSubnet.ip3) + '.' + str(
                 self.addressSubnet.ip4) + ' /' + str(self.addressSubnet.mask))
+        print(
+            'Range: ' + str(self.addressSubnet.rangeStart1) + '.' + str(self.addressSubnet.rangeStart2) + '.' + str(
+                self.addressSubnet.rangeStart3) + '.' + str(self.addressSubnet.rangeStart4) + '-' + str(
+                self.addressSubnet.rangeEnd1) + '.' + str(self.addressSubnet.rangeEnd2) + '.' + str(
+                self.addressSubnet.rangeEnd3) + '.' + str(self.addressSubnet.rangeEnd4))
         print('User: ' + self.controllerAntenna.user)
         print('Password: ' + self.controllerAntenna.mdp)
         print('Url: http://unifi.' + self.controllerAntenna.url + ':' + str(self.controllerAntenna.port) + '/inform')
@@ -66,6 +72,28 @@ class Ctrl:
             mask = input('Mask [' + str(self.addressSubnet.mask) + ']: ')
             if mask:
                 self.addressSubnet.mask = int(mask)
+
+            rangeStart = input(
+                'Range start [' + str(self.addressSubnet.rangeStart1) + '.' + str(
+                    self.addressSubnet.rangeStart2) + '.' + str(
+                    self.addressSubnet.rangeStart3) + '.' + str(self.addressSubnet.rangeStart4) + ']: ')
+            if rangeStart:
+                rsip1, rsip2, rsip3, rsip4 = rangeStart.split('.', 4)
+                self.addressSubnet.rangeStart1 = int(rsip1)
+                self.addressSubnet.rangeStart2 = int(rsip2)
+                self.addressSubnet.rangeStart3 = int(rsip3)
+                self.addressSubnet.rangeStart4 = int(rsip4)
+
+            rangeEnd = input(
+                'Range end [' + str(self.addressSubnet.rangeEnd1) + '.' + str(
+                    self.addressSubnet.rangeEnd2) + '.' + str(
+                    self.addressSubnet.rangeEnd3) + '.' + str(self.addressSubnet.rangeEnd4) + ']: ')
+            if rangeEnd:
+                reip1, reip2, reip3, reip4 = rangeEnd.split('.', 4)
+                self.addressSubnet.rangeEnd1 = int(reip1)
+                self.addressSubnet.rangeEnd2 = int(reip2)
+                self.addressSubnet.rangeEnd3 = int(reip3)
+                self.addressSubnet.rangeEnd4 = int(reip4)
 
             user = input('User [' + self.controllerAntenna.user + ']: ')
             if user:
@@ -104,7 +132,7 @@ class Ctrl:
                 print('Writes the replacement address (None = no change / - = delete): ')
                 newIgnoredIp = []
                 for ip in self.ignoredIp:
-                    newAddress = input(ip+' :')
+                    newAddress = input(ip + ' :')
                     if not newAddress:
                         newIgnoredIp.append(ip)
                     elif not newAddress.__eq__('-'):
@@ -144,34 +172,52 @@ class Ctrl:
         dtS_string = self.dateStart.strftime("%d/%m/%Y %H:%M:%S")
         print('Start at ' + dtS_string)
 
+    def isInRange(self, ip):
+        result = False
+        ip1, ip2, ip3, ip4 = ip.split('.', 4)
+        ip1 = int(ip1)
+        ip2 = int(ip2)
+        ip3 = int(ip3)
+        ip4 = int(ip4)
+        if self.addressSubnet.rangeStart1 <= ip1 and ip1 <= self.addressSubnet.rangeEnd1:
+            if self.addressSubnet.rangeStart2 <= ip2 and ip2 <= self.addressSubnet.rangeEnd2:
+                if self.addressSubnet.rangeStart3 <= ip3 and ip3 <= self.addressSubnet.rangeEnd3:
+                    if self.addressSubnet.rangeStart4 <= ip4 and ip4 <= self.addressSubnet.rangeEnd4:
+                        result = True
+        return result
+
     def scan(self):
         while self.compt > 0:
 
             ip = self.counter.counter()
             print(ip, end=': ', flush=True)
-            try:
-                self.ignoredIp.index(ip)
-                self.comptIgn = self.comptIgn + 1
-                self.comptIgnList = self.comptIgnList + 1
-                print("Ignored from the list")
-            except ValueError:
-                result = self.sshConnector.addtocontroller(ip)
-                if result.__eq__('Ok'):
-                    self.comptOk = self.comptOk + 1
-                elif result.__eq__('Empty'):
-                    if self.addAutomaticallyIp:
-                        self.ignoredIp.append(ip)
-                    self.comptVide = self.comptVide + 1
-                elif result.__eq__('Ignored'):
-                    if self.addAutomaticallyIp:
-                        self.ignoredIp.append(ip)
+            if self.isInRange(ip):
+                try:
+                    self.ignoredIp.index(ip)
                     self.comptIgn = self.comptIgn + 1
-                else:
-                    if self.addAutomaticallyIp:
-                        self.ignoredIp.append(ip)
-                    self.comptError = self.comptError + 1
-
-                print(result)
+                    self.comptIgnList = self.comptIgnList + 1
+                    print("Ignored from the list")
+                except ValueError:
+                    result = self.sshConnector.addtocontroller(ip)
+                    if result.__eq__('Ok'):
+                        self.comptOk = self.comptOk + 1
+                    elif result.__eq__('Empty'):
+                        if self.addAutomaticallyIp:
+                            self.ignoredIp.append(ip)
+                        self.comptVide = self.comptVide + 1
+                    elif result.__eq__('Ignored'):
+                        if self.addAutomaticallyIp:
+                            self.ignoredIp.append(ip)
+                        self.comptIgn = self.comptIgn + 1
+                    else:
+                        if self.addAutomaticallyIp:
+                            self.ignoredIp.append(ip)
+                        self.comptError = self.comptError + 1
+                    print(result)
+            else:
+                self.comptIgn = self.comptIgn + 1
+                self.comptNotInRange = self.comptNotInRange + 1
+                print("Not in range")
 
             self.compt = self.compt - 1
             self.comptIte = self.comptIte + 1
@@ -185,7 +231,8 @@ class Ctrl:
         dtE_string = self.dateEnd.strftime("%d/%m/%Y %H:%M:%S")
         print("Finish at " + dtE_string + " with " + str(self.comptIte) + " addresses tested: " + str(
             self.comptVide) + " empty, " + str(
-            self.comptIgn) + " ignored (" + str(self.comptIgnList) + " from the list), " + str(
+            self.comptIgn) + " ignored (" + str(
+            self.comptIgnList) + " from the list, " + str(self.comptNotInRange) + " not in range), " + str(
             self.comptError) + " with error and " + str(self.comptOk) + " ok")
         hours, minutes, seconds = DateTools.convert_timedelta(abs(self.dateStart - self.dateEnd))
         print("Time: " + str(hours) + " hours " + str(minutes) + " minutes " + str(seconds) + " seconds")
