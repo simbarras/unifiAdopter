@@ -138,8 +138,7 @@ class Ctrl:
                     elif not newAddress.__eq__('-'):
                         newIgnoredIp.append(newAddress)
                     elif newAddress.__eq__('-all'):
-                        newIgnoredIp == []
-                        break;
+                        self.ignoredIp == []
 
                 print('Writes new address (None = no): ')
                 addIp = input('')

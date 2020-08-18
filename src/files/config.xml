@@ -6,13 +6,13 @@
         <ip4>0</ip4>
         <mask>24</mask>
         <rangeStart>10.11.100.0</rangeStart>
-        <rangeEnd>10.11.100.255</rangeEnd>
+        <rangeEnd>10.11.100.10</rangeEnd>
     </addresse>
     <controller>
         <user>ubnt</user>
         <mdp>ubnt</mdp>
         <url>telecomservices.ch</url>
         <port>55880</port>
-        <timeout>2</timeout>
+        <timeout>1</timeout>
     </controller>
 </config>
