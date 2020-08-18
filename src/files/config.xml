@@ -3,16 +3,16 @@
         <ip1>10</ip1>
         <ip2>11</ip2>
         <ip3>100</ip3>
-        <ip4>64</ip4>
-        <mask>29</mask>
-        <rangeStart>10.11.100.66</rangeStart>
-        <rangeEnd>10.11.100.67</rangeEnd>
+        <ip4>0</ip4>
+        <mask>24</mask>
+        <rangeStart>10.11.100.0</rangeStart>
+        <rangeEnd>10.11.100.255</rangeEnd>
     </addresse>
     <controller>
         <user>ubnt</user>
         <mdp>ubnt</mdp>
         <url>telecomservices.ch</url>
         <port>55880</port>
-        <timeout>5</timeout>
+        <timeout>2</timeout>
     </controller>
 </config>
