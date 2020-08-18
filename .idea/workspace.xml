@@ -25,8 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4510c5a-9063-4c4f-a565-d73dac7ec0b4" name="Default Changelist" comment="Range research">
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+    <list default="true" id="d4510c5a-9063-4c4f-a565-d73dac7ec0b4" name="Default Changelist" comment="Update setup.py">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ctrl.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ctrl.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +191,7 @@
       <workItem from="1597331242836" duration="785000" />
       <workItem from="1597385384332" duration="16871000" />
       <workItem from="1597644510381" duration="18503000" />
-      <workItem from="1597731499484" duration="3129000" />
+      <workItem from="1597731499484" duration="3853000" />
     </task>
     <task id="LOCAL-00001" summary="Add the time statistics">
       <created>1597084872315</created>
@@ -514,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597733986504</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Update setup.py">
+      <created>1597738422531</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1597738422531</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,7 +571,8 @@
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Format XML file" />
     <MESSAGE value="Range research" />
-    <option name="LAST_COMMIT_MESSAGE" value="Range research" />
+    <MESSAGE value="Update setup.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update setup.py" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -651,11 +660,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597075807574" />
-    <state x="2472" y="225" key="Vcs.Push.Dialog.v2" timestamp="1597733988816">
+    <state x="2472" y="225" key="Vcs.Push.Dialog.v2" timestamp="1597738424031">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597661714742" />
-    <state x="2472" y="225" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597733988816" />
+    <state x="2472" y="225" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597738424031" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1597669381302" />
     <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597084899930" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597088607142" />
