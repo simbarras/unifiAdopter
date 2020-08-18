@@ -4,7 +4,8 @@ import xml.etree.ElementTree as ET
 from beans.Addresse import Addresse
 from beans.Controller import Controller
 
-import lxml.etree as etree
+
+# import lxml.etree as etree
 
 
 class XmlReader:

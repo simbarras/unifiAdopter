@@ -133,16 +133,18 @@ class Ctrl:
                 delete = False
                 newIgnoredIp = []
                 for ip in self.ignoredIp:
-                    newAddress = input(ip + ' :')
-                    if not newAddress:
-                        newIgnoredIp.append(ip)
-                    elif not newAddress.__eq__('-'):
-                        newIgnoredIp.append(newAddress)
-                    elif newAddress.__eq__('-all'):
-                        delete = True
+                    if not delete:
+                        newAddress = input(ip + ' :')
+                        if not newAddress:
+                            newIgnoredIp.append(ip)
+                        elif newAddress.__eq__('-all'):
+                            delete = True
+                        elif newAddress.__eq__('-'):
+                            newIgnoredIp.append(newAddress)
 
                 if not delete:
                     newIgnoredIp = []
+
                 print('Writes new address (None = no): ')
                 addIp = input('')
                 while addIp:
