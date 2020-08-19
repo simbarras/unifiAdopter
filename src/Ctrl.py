@@ -23,6 +23,7 @@ class Ctrl:
     addressSubnet = None
     controllerAntenna = None
     ignoredIp = []
+    newIgnoredIp = []
 
     counter = None
     sshConnector = None
@@ -134,27 +135,25 @@ class Ctrl:
             if modifAddressesIgnored.__eq__('y'):
                 print('Writes the replacement address (None = no change / - = delete): ')
                 delete = False
-                newIgnoredIp = []
+                self.newIgnoredIp = []
                 for ip in self.ignoredIp:
                     if not delete:
                         newAddress = input(ip + ' :')
-                        if not newAddress:
-                            newIgnoredIp.append(ip)
-                        elif newAddress.__eq__('-all'):
+                        if newAddress == '-all':
                             delete = True
-                        elif newAddress.__eq__('-'):
-                            newIgnoredIp.append(newAddress)
-
-                if not delete:
-                    newIgnoredIp = []
-
+                        elif newAddress == '':
+                            self.newIgnoredIp.append(ip)
+                        elif not newAddress == '-':
+                            self.newIgnoredIp.append(newAddress)
+                if delete:
+                    self.newIgnoredIp = []
                 print('Writes new address (None = no): ')
                 addIp = input('')
                 while addIp:
-                    newIgnoredIp.append(addIp)
+                    self.newIgnoredIp.append(addIp)
                     addIp = input('')
 
-                self.ignoredIp = newIgnoredIp
+                self.ignoredIp = self.newIgnoredIp
 
                 overwriteIpfile = input('Would you like to add new ip to the file ? (y/n) [n]: ')
                 if overwriteIpfile.__eq__('y'):
