@@ -13,6 +13,6 @@
         <mdp>ubnt</mdp>
         <url>telecomservices.ch</url>
         <port>55880</port>
-        <timeout>1</timeout>
+        <timeout>3</timeout>
     </controller>
 </config>

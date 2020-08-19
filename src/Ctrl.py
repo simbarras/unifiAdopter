@@ -103,7 +103,7 @@ class Ctrl:
             if password:
                 self.controllerAntenna.mdp = password
 
-            url = input('Url [' + self.controllerAntenna.url + ']: ')
+            url = input('Url http://unifi.[' + self.controllerAntenna.url + ']/inform: ')
             if url:
                 self.controllerAntenna.url = url
 

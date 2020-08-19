@@ -1,8 +1,6 @@
 import os
 import xml.etree.ElementTree as ET
-
 import lxml.etree as etree
-
 from beans.Addresse import Addresse
 from beans.Controller import Controller
 
