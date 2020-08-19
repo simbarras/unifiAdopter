@@ -25,8 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4510c5a-9063-4c4f-a565-d73dac7ec0b4" name="Default Changelist" comment="Update start wizard">
-      <change beforePath="$PROJECT_DIR$/src/files/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/config.xml" afterDir="false" />
+    <list default="true" id="d4510c5a-9063-4c4f-a565-d73dac7ec0b4" name="Default Changelist" comment="Update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,42 +190,7 @@
       <workItem from="1597331242836" duration="785000" />
       <workItem from="1597385384332" duration="16871000" />
       <workItem from="1597644510381" duration="18503000" />
-      <workItem from="1597731499484" duration="3963000" />
-    </task>
-    <task id="LOCAL-00001" summary="Add the time statistics">
-      <created>1597084872315</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1597084872315</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Add ide">
-      <created>1597087147944</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1597087147944</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Move XmlReader.py">
-      <created>1597087267757</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1597087267757</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Configure timeout with config.xml file">
-      <created>1597088594095</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1597088594095</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Package format">
-      <created>1597214719822</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1597214719822</updated>
+      <workItem from="1597731499484" duration="7793000" />
     </task>
     <task id="LOCAL-00006" summary="Form package for pip">
       <created>1597241563672</created>
@@ -528,7 +493,49 @@
       <option name="project" value="LOCAL" />
       <updated>1597744508805</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Update config.xml">
+      <created>1597744623522</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1597744623522</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Update config.xml">
+      <created>1597745008520</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1597745008520</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Update start wizzard">
+      <created>1597745285928</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1597745285928</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Update start wizzard">
+      <created>1597746720045</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1597746720045</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Easter egg">
+      <created>1597748237134</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1597748237134</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Update">
+      <created>1597748280502</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1597748280502</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +586,11 @@
     <MESSAGE value="Range research" />
     <MESSAGE value="Update setup.py" />
     <MESSAGE value="Update start wizard" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update start wizard" />
+    <MESSAGE value="Update config.xml" />
+    <MESSAGE value="Update start wizzard" />
+    <MESSAGE value="Easter egg" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -611,42 +622,58 @@
     </state>
     <state x="739" y="275" key="FileChooserDialogImpl/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597651512080" />
     <state x="739" y="275" key="FileChooserDialogImpl/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597214619228" />
-    <state width="1877" height="268" key="GridCell.Tab.0.bottom" timestamp="1597733712298">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1597746681825">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597663243658" />
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597746681825" />
     <state width="1877" height="268" key="GridCell.Tab.0.bottom/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597733712298" />
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597157603575" />
     <state width="938" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351386" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597331071023" />
     <state width="1877" height="268" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597678026295" />
-    <state width="1877" height="268" key="GridCell.Tab.0.center" timestamp="1597733712298">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1597746681825">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597663243658" />
+    <state width="1877" height="269" key="GridCell.Tab.0.center/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597746681825" />
     <state width="1877" height="268" key="GridCell.Tab.0.center/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597733712298" />
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1597157603575" />
     <state width="938" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351385" />
     <state width="1877" height="281" key="GridCell.Tab.0.center/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597331071023" />
     <state width="1877" height="268" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597678026294" />
-    <state width="1877" height="268" key="GridCell.Tab.0.left" timestamp="1597733712298">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1597746681825">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597663243658" />
+    <state width="1877" height="269" key="GridCell.Tab.0.left/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597746681825" />
     <state width="1877" height="268" key="GridCell.Tab.0.left/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597733712298" />
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1597157603575" />
     <state width="938" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351385" />
     <state width="1877" height="281" key="GridCell.Tab.0.left/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597331071022" />
     <state width="1877" height="268" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597678026294" />
-    <state width="1877" height="268" key="GridCell.Tab.0.right" timestamp="1597733712298">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1597746681825">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597663243658" />
+    <state width="1877" height="269" key="GridCell.Tab.0.right/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597746681825" />
     <state width="1877" height="268" key="GridCell.Tab.0.right/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597733712298" />
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1597157603575" />
     <state width="938" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351385" />
     <state width="1877" height="281" key="GridCell.Tab.0.right/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597331071023" />
     <state width="1877" height="268" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597678026294" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1597746599464">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597746599464" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1597746599464">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597746599464" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1597746599464">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597746599464" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1597746599464">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597746599464" />
     <state x="184" y="86" key="MergeDialog" timestamp="1597087198977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -667,10 +694,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597075807574" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597744510649">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597748283537">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597744510649" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597748283537" />
     <state x="2472" y="225" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597738424031" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1597669381302" />
     <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597084899930" />
@@ -687,11 +714,22 @@
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597087222873" />
     <state x="-1143" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1597331265762" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/Ctrl.py</url>
+          <line>139</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/unifiAdopterGit$main.coverage" NAME="main Coverage Results" MODIFIED="1597090351375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/unifiAdopter$setup.coverage" NAME="setup Coverage Results" MODIFIED="1597298843070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/unifiAdopter$main.coverage" NAME="main Coverage Results" MODIFIED="1597313110479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/unifiAdopter$testModuleDeploy.coverage" NAME="testModuleDeploy Coverage Results" MODIFIED="1597152788510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/unifiAdopter$unifiAdopter.coverage" NAME="unifiAdopter Coverage Results" MODIFIED="1597733712284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/unifiAdopter$unifiAdopter.coverage" NAME="unifiAdopter Coverage Results" MODIFIED="1597746681819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>
