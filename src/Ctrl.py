@@ -147,6 +147,12 @@ class Ctrl:
                             self.newIgnoredIp.append(newAddress)
                 if delete:
                     self.newIgnoredIp = []
+                print('Writes new range (None = no): ')
+                addRange = input('')
+                while addRange:
+                    for rangeIp in self.ignoredIpReader.readRange(addRange):
+                        self.newIgnoredIp.append(rangeIp)
+                    addRange = input('')
                 print('Writes new address (None = no): ')
                 addIp = input('')
                 while addIp:

@@ -1,6 +1,9 @@
 import os
 import xml.etree.ElementTree as ET
+
 import lxml.etree as etree
+
+from Counter import Counter
 from beans.Addresse import Addresse
 from beans.Controller import Controller
 
@@ -18,9 +21,43 @@ class XmlReader:
         self.tRoot = self.tree.getroot()
 
     def readIgnoredIp(self):
-        for child in self.tRoot:
+        singleIp = self.tRoot.find('single')
+        rangeIp = self.tRoot.find('range')
+        for child in singleIp:
             self.ignoredIp.append(child.text)
+        for child in rangeIp:
+            for ip in self.readRange(child.text):
+                self.ignoredIp.append(ip)
+
         return self.ignoredIp
+
+    def readRange(self, range):
+        rips, ripe = range.split('-', 2)
+        ips1, ips2, ips3, ips4 = rips.split('.', 4)
+        ipe1, ipe2, ipe3, ipe4 = ripe.split('.', 4)
+        ips1 = int(ips1)
+        ips2 = int(ips2)
+        ips3 = int(ips3)
+        ips4 = int(ips4)
+        ipe1 = int(ipe1)
+        ipe2 = int(ipe2)
+        ipe3 = int(ipe3)
+        ipe4 = int(ipe4)
+
+        ipl1 = (ipe1 - ips1)
+        ipl2 = (ipe2 - ips2)
+        ipl3 = (ipe3 - ips3)
+        ipl4 = (ipe4 - ips4)
+        comptAddr = (((ipl1 * 256 + ipl2) * 256 + ipl3) * 256 + ipl4) - 1
+
+        ignoredIp = []
+        address = Addresse(ips1, ips2, ips3, ips4, 0, '0.0.0.0', '0.0.0.0')
+        counter = Counter(address)
+        while comptAddr > 0:
+            ip = counter.counter()
+            ignoredIp.append(ip)
+            comptAddr = comptAddr - 1
+        return ignoredIp
 
     def readConfigAddresses(self):
         adresseXml = self.tRoot.find('addresse')

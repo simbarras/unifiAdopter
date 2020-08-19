@@ -3,7 +3,6 @@ class Counter:
     ip2 = 0
     ip3 = 0
     ip4 = 0
-    mask = 0
     host = '0.0.0.0'
 
     def __init__(self, adresseSubnet):
@@ -11,7 +10,6 @@ class Counter:
         self.ip2 = adresseSubnet.ip2
         self.ip3 = adresseSubnet.ip3
         self.ip4 = adresseSubnet.ip4
-        self.mask = adresseSubnet.mask
 
     def counter(self):
         if self.ip4 == 255:
