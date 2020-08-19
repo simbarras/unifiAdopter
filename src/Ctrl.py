@@ -155,7 +155,7 @@ class Ctrl:
 
                 self.ignoredIp = self.newIgnoredIp
 
-                overwriteIpfile = input('Would you like to add new ip to the file ? (y/n) [n]: ')
+                overwriteIpfile = input('Would you like to overwrite the ignored ip file ? (y/n) [n]: ')
                 if overwriteIpfile.__eq__('y'):
                     if not self.ignoredIpReader.writeIgnoredIp(self.ignoredIp):
                         print('Error when writing the IP file')
