@@ -1,7 +1,5 @@
 <ignoredIp>
-    <single>
-        <ip>0.0.0.0</ip>
-    </single>
+    <single/>
     <range>
         <ip>0.0.0.0-0.0.0.0</ip>
     </range>

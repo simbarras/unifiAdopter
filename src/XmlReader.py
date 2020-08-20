@@ -84,7 +84,7 @@ class XmlReader:
         if os.path.exists(self.file):
             controllerXml = self.tRoot.find('controller')
             user = controllerXml.find('user').text
-            mdp = controllerXml.find('mdp').text
+            mdp = controllerXml.find('password').text
             url = controllerXml.find('url').text
             port = controllerXml.find('port').text
             timeout = controllerXml.find('timeout').text
@@ -112,7 +112,7 @@ class XmlReader:
 
             controllerXml = self.tRoot.find('controller')
             controllerXml.find('user').text = str(controllerAntenna.user)
-            controllerXml.find('mdp').text = str(controllerAntenna.mdp)
+            controllerXml.find('password').text = str(controllerAntenna.mdp)
             controllerXml.find('url').text = str(controllerAntenna.url)
             controllerXml.find('port').text = str(controllerAntenna.port)
             controllerXml.find('timeout').text = str(controllerAntenna.timeout)

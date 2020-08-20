@@ -31,10 +31,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d4510c5a-9063-4c4f-a565-d73dac7ec0b4" name="Default Changelist" comment="Configurations files restoration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XmlReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/XmlReader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/ignoredIp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/ignoredIp.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,14 +200,7 @@
       <workItem from="1597644510381" duration="18503000" />
       <workItem from="1597731499484" duration="7793000" />
       <workItem from="1597816877202" duration="14356000" />
-      <workItem from="1597901566626" duration="11185000" />
-    </task>
-    <task id="LOCAL-00014" summary="Form package for pip">
-      <created>1597299398408</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1597299398408</updated>
+      <workItem from="1597901566626" duration="12585000" />
     </task>
     <task id="LOCAL-00015" summary="Form package for pip">
       <created>1597303061023</created>
@@ -549,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597914107091</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Configurations files restoration">
+      <created>1597916489107</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1597916489107</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,13 +614,13 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="318" y="22" key="#Options/0.0.1280.680@0.0.1280.680" timestamp="1597144745581" />
-    <state x="2334" y="174" width="1092" height="851" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597914486019">
+    <state x="2334" y="174" width="1092" height="851" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597920862821">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" width="1092" height="851" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597651600675" />
     <state x="276" y="114" width="728" height="525" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1597128090011" />
     <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597086876828" />
-    <state x="2334" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597914486019" />
+    <state x="2334" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597920862821" />
     <state x="393" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597305532847">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -718,7 +714,7 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597075807574" />
-    <state x="2472" y="225" key="Vcs.Push.Dialog.v2" timestamp="1597850237258">
+    <state x="2472" y="225" key="Vcs.Push.Dialog.v2" timestamp="1597916492466">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597748283537" />
@@ -728,7 +724,7 @@
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597088607142" />
     <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1597405458214" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597413375645" />
-    <state x="2472" y="225" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597677683017" />
+    <state x="2472" y="225" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597916492466" />
     <state x="2697" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597901582564">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
