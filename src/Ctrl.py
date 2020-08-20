@@ -127,13 +127,12 @@ class Ctrl:
         seeAddressesIgnored = input('Would you like to see the ignored ip ? (y/n) [n]: ')
 
         if seeAddressesIgnored.__eq__('y'):
-            print('Tip the address you will add (None = no): ')
             for ip in self.ignoredIp:
                 print(ip)
 
             modifAddressesIgnored = input('Would you like to modify the ignored ip list? (y/n) [n]: ')
             if modifAddressesIgnored.__eq__('y'):
-                print('Writes the replacement address (None = no change / - = delete): ')
+                print('Writes the replacement address (None = no change / - = delete / -all = delete all): ')
                 delete = False
                 self.newIgnoredIp = []
                 for ip in self.ignoredIp:

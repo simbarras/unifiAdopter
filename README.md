@@ -1,5 +1,5 @@
 # unifiAdopter
-Python project who add automaticly all antenna from a subnet to a distant controller
+Python project who add automatically all antenna from a subnet to a distant controller
 
 This application tests all the addresses of a subnet and if it is a Unifi antenna, it automatically adds it to the controller.
 It starts by reading the file `files/config.xml` and takes the following parameters: User, password, controller URL, maximum timeout and subnet. Then, it reads a list of banned addresses from `files/ignoredIp.xml` to save time. Finally, it tests all the addresses and ends up rendering a time statistic and the number of ok, ignored and empty addresses.
@@ -12,7 +12,7 @@ How to install unifiAdopter on Raspberry.
 - Download and write the 'Raspberry Pi OS (32-bit) with desktop' image.
 - Configure the Raspberry
 - Download and configure the 'TeamViewer' application.
-- Add this line `hdmi_force_hotplug=1` to `/boot/config.txt`
+- Add this line `hdmi_safe=1` and `hdmi_force_hotplug=1` to `/boot/config.txt`
 - Perform the following commands:
 ```
 echo '' > install-unifiAdopter.sh
@@ -134,3 +134,29 @@ You need to use the user "pi" and make the command `cd` to be in the folder `/ho
 
 - Remove the application:
 `sudo ./remove-unifiAdopter.sh` or `unifiA-remove`
+
+###Start wizard
+Here is the tree structure of the launch Wizard:
+- Would you like to modify the informations ? (y/n) [n]:
+  - `y`: Shows all entries and asks if they need to be changed
+  - Would you like to overwrite config files ? (y/n) [n]:
+    - Overwrite the config file
+- Would you like to see the ignored ip ? (y/n) [n]:
+  - `y`: Shows all ignored Ip
+  - Would you like to modify the ignored ip list? (y/n) [n]:
+    - `y`: Shows all ignored Ip and asks if they need to be changed
+        - `10.0.0.0`: replace the current Ip by '10.0.0.0'
+        - `-`: delete the current Ip
+        - `-all`: delete all Ip
+      - Writes new range (None = no):
+        - `10.0.0.10-10.0.0.15`: add all addresses between '10.0.0.10' and '10.0.0.15'
+        - ' ': Go to the next question
+      - Writes new address (None = no):
+        - `10.0.0.10`: add addresses '10.0.0.10'
+        - ' ': Go to the next question
+      - Would you like to overwrite the ignored ip files ? (y/n) [n]:
+        - `y`: Overwrite the ignored ip file
+- Would you like to run the scan ? (y/n) [y]:
+  - `n`: Stops the program
+- Would you like to add automatically the non-valid ip to the files ? (y/n) [n]:
+  - `y`: Add all non-valid ip to the ignored ip file. Useful when you need to run the application 2 times on the same network.
