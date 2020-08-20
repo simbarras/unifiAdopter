@@ -26,156 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4510c5a-9063-4c4f-a565-d73dac7ec0b4" name="Default Changelist" comment="Update">
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml-4.5.2.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml-4.5.2.dist-info/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml-4.5.2.dist-info/LICENSES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml-4.5.2.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml-4.5.2.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml-4.5.2.dist-info/REQUESTED" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml-4.5.2.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml-4.5.2.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/ElementInclude.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/_elementpath.cp38-win_amd64.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/_elementpath.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/builder.cp38-win_amd64.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/builder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/cssselect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/doctestcompare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/etree.cp38-win_amd64.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/etree.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/etree_api.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/html/ElementSoup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/html/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/html/_diffcommand.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/html/_html5builder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/html/_setmixin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/html/builder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/html/clean.cp38-win_amd64.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/html/clean.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/html/defs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/html/diff.cp38-win_amd64.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/html/diff.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/html/formfill.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/html/html5parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/html/soupparser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/html/usedoctest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/__init__.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/c14n.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/config.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/dtdvalid.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/etree_defs.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/etreepublic.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/htmlparser.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libexslt/exslt.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libexslt/exsltconfig.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libexslt/exsltexports.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libexslt/libexslt.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/DOCBparser.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/HTMLparser.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/HTMLtree.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/SAX.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/SAX2.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/c14n.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/catalog.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/chvalid.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/debugXML.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/dict.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/encoding.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/entities.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/globals.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/hash.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/list.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/nanoftp.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/nanohttp.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/parser.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/parserInternals.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/pattern.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/relaxng.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/schemasInternals.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/schematron.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/threads.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/tree.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/uri.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/valid.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xinclude.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xlink.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xmlIO.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xmlautomata.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xmlerror.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xmlexports.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xmlmemory.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xmlmodule.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xmlreader.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xmlregexp.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xmlsave.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xmlschemas.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xmlschemastypes.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xmlstring.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xmlunicode.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xmlversion.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xmlwriter.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xpath.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xpathInternals.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxml/xpointer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/attributes.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/documents.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/extensions.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/extra.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/functions.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/imports.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/keys.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/libxslt.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/namespaces.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/numbersInternals.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/preproc.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/security.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/templates.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/transform.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/trio.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/triodef.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/variables.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/win32config.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/xslt.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/xsltInternals.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/xsltconfig.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/xsltexports.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/xsltlocale.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/libxslt/xsltutils.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/lxml-version.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/relaxng.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/schematron.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/tree.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/uri.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/xinclude.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/xmlerror.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/xmlparser.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/xmlschema.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/xpath.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/includes/xslt.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/isoschematron/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/isoschematron/resources/rng/iso-schematron.rng" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/isoschematron/resources/xsl/RNG2Schtrn.xsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/isoschematron/resources/xsl/XSD2Schtrn.xsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_abstract_expand.xsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_dsdl_include.xsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_message.xsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_skeleton_for_xslt1.xsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_svrl_for_xslt1.xsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/lxml.etree.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/lxml.etree_api.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/objectify.cp38-win_amd64.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/pyclasslookup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/sax.cp38-win_amd64.pyd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/sax.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/lxml/usedoctest.py" afterDir="false" />
+    <list default="true" id="d4510c5a-9063-4c4f-a565-d73dac7ec0b4" name="Default Changelist" comment="Add exclusing range">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ctrl.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ctrl.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/XmlReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/XmlReader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/files/ignoredIp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/ignoredIp.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -210,6 +63,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="JupyterTrust" id="eea237d2-9897-4673-96b9-9be4502888e8" />
   <component name="ProjectId" id="1fujZ3Rv4F8hnOQoGfLEXFKFXNw" />
@@ -223,6 +77,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/files" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -340,35 +195,8 @@
       <workItem from="1597385384332" duration="16871000" />
       <workItem from="1597644510381" duration="18503000" />
       <workItem from="1597731499484" duration="7793000" />
-      <workItem from="1597816877202" duration="4020000" />
-    </task>
-    <task id="LOCAL-00008" summary="Form package for pip">
-      <created>1597242448708</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1597242448708</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Form package for pip">
-      <created>1597242699082</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1597242699082</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Form package for pip">
-      <created>1597242889625</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1597242889625</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Form package for pip">
-      <created>1597243479348</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1597243479348</updated>
+      <workItem from="1597816877202" duration="14356000" />
+      <workItem from="1597901566626" duration="2946000" />
     </task>
     <task id="LOCAL-00012" summary="Form package for pip">
       <created>1597244097805</created>
@@ -685,7 +513,35 @@
       <option name="project" value="LOCAL" />
       <updated>1597816984762</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Update">
+      <created>1597836532258</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1597836532258</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Update modifying ip">
+      <created>1597838837710</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1597838837710</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Update modifying ip">
+      <created>1597839040129</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1597839040129</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Add exclusing range">
+      <created>1597850231093</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1597850231093</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -716,7 +572,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add the time statistics" />
     <MESSAGE value="Add time stats" />
     <MESSAGE value="Add ide" />
     <MESSAGE value="Move XmlReader.py" />
@@ -740,7 +595,9 @@
     <MESSAGE value="Update start wizzard" />
     <MESSAGE value="Easter egg" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Update modifying ip" />
+    <MESSAGE value="Add exclusing range" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add exclusing range" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -772,58 +629,66 @@
     </state>
     <state x="739" y="275" key="FileChooserDialogImpl/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597651512080" />
     <state x="739" y="275" key="FileChooserDialogImpl/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597214619228" />
-    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1597817457635">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="238" key="GridCell.Tab.0.bottom" timestamp="1597908069181">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="269" key="GridCell.Tab.0.bottom/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597817457635" />
-    <state width="1877" height="268" key="GridCell.Tab.0.bottom/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597733712298" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597157603575" />
+    <state width="1877" height="238" key="GridCell.Tab.0.bottom/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597902974911" />
+    <state width="1233" height="238" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597838721243" />
     <state width="938" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351386" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597331071023" />
-    <state width="1877" height="268" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597678026295" />
-    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1597817457635">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="238" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597908069181" />
+    <state width="1877" height="238" key="GridCell.Tab.0.center" timestamp="1597908069181">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="269" key="GridCell.Tab.0.center/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597817457635" />
-    <state width="1877" height="268" key="GridCell.Tab.0.center/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597733712298" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1597157603575" />
+    <state width="1877" height="238" key="GridCell.Tab.0.center/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597902974911" />
+    <state width="1233" height="238" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1597838721243" />
     <state width="938" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351385" />
     <state width="1877" height="281" key="GridCell.Tab.0.center/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597331071023" />
-    <state width="1877" height="268" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597678026294" />
-    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1597817457635">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="238" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597908069181" />
+    <state width="1877" height="238" key="GridCell.Tab.0.left" timestamp="1597908069181">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="269" key="GridCell.Tab.0.left/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597817457635" />
-    <state width="1877" height="268" key="GridCell.Tab.0.left/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597733712298" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1597157603575" />
+    <state width="1877" height="238" key="GridCell.Tab.0.left/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597902974911" />
+    <state width="1233" height="238" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1597838721242" />
     <state width="938" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351385" />
     <state width="1877" height="281" key="GridCell.Tab.0.left/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597331071022" />
-    <state width="1877" height="268" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597678026294" />
-    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1597817457635">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="238" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597908069181" />
+    <state width="1877" height="238" key="GridCell.Tab.0.right" timestamp="1597908069181">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="269" key="GridCell.Tab.0.right/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597817457635" />
-    <state width="1877" height="268" key="GridCell.Tab.0.right/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597733712298" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1597157603575" />
+    <state width="1877" height="238" key="GridCell.Tab.0.right/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597902974911" />
+    <state width="1233" height="238" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1597838721243" />
     <state width="938" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597090351385" />
     <state width="1877" height="281" key="GridCell.Tab.0.right/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597331071023" />
-    <state width="1877" height="268" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597678026294" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1597746599464">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="238" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597908069181" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1597850362519">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597746599464" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1597746599464">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597850362519" />
+    <state width="1233" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597838639538" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1597850362519">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.center/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597746599464" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1597746599464">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597850362519" />
+    <state width="1233" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1597838639538" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1597850362519">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.left/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597746599464" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1597746599464">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597850362519" />
+    <state width="1233" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1597838639538" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1597850362519">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597746599464" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597850362519" />
+    <state width="1233" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1597838639538" />
     <state x="184" y="86" key="MergeDialog" timestamp="1597087198977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -844,33 +709,48 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597075807574" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597748283537">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2472" y="225" key="Vcs.Push.Dialog.v2" timestamp="1597850237258">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597748283537" />
-    <state x="2472" y="225" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597738424031" />
-    <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1597669381302" />
+    <state x="2472" y="225" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597850237258" />
+    <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1597839079364" />
     <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597084899930" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597088607142" />
     <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1597405458214" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597413375645" />
     <state x="2472" y="225" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597677683017" />
-    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597816960953">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2697" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597901582564">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597816960953" />
-    <state x="2697" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597731521140" />
+    <state x="2697" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597901582564" />
     <state x="518" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1597140335755" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597087222873" />
     <state x="-1143" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1597331265762" />
+    <state x="2389" y="170" width="1382" height="1027" key="dock-window-1" timestamp="1597903173228">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2389" y="170" width="1382" height="1027" key="dock-window-1/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597903173228" />
+    <state x="-28" y="-14" width="1288" height="687" maximized="true" key="dock-window-2" timestamp="1597907788855">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="79" y="0" width="1382" height="1027" key="dock-window-2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597903173228" />
+    <state x="-7" y="0" width="1288" height="687" key="dock-window-2/0.0.1280.680@0.0.1280.680" timestamp="1597906063693" />
+    <state x="-28" y="-14" width="1288" height="687" maximized="true" key="dock-window-2/1920.0.1920.1040/0.0.1920.1040/-1920.0.1280.680@1920.0.1920.1040" timestamp="1597907788855" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/Ctrl.py</url>
-          <line>139</line>
-          <option name="timeStamp" value="1" />
+          <line>161</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/Ctrl.py</url>
+          <line>147</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -880,6 +760,6 @@
     <SUITE FILE_PATH="coverage/unifiAdopter$setup.coverage" NAME="setup Coverage Results" MODIFIED="1597298843070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/unifiAdopter$main.coverage" NAME="main Coverage Results" MODIFIED="1597313110479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/unifiAdopter$testModuleDeploy.coverage" NAME="testModuleDeploy Coverage Results" MODIFIED="1597152788510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/unifiAdopter$unifiAdopter.coverage" NAME="unifiAdopter Coverage Results" MODIFIED="1597817457621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/unifiAdopter$unifiAdopter.coverage" NAME="unifiAdopter Coverage Results" MODIFIED="1597908069174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>

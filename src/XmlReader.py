@@ -110,12 +110,18 @@ class XmlReader:
     def writeIgnoredIp(self, ignoredIp):
         result = False
 
-        childs = self.tRoot.findall('ip')
-        for child in childs:
-            self.tRoot.remove(child)
+        singleIp = self.tRoot.find('single')
+        self.tRoot.remove(singleIp)
+        rangeIp = self.tRoot.find('range')
+        self.tRoot.remove(rangeIp)
+
+        singleIp = ET.SubElement(self.tRoot, 'single')
+        rangeIp = ET.SubElement(self.tRoot, 'range')
+        rangeIpEx = ET.SubElement(rangeIp, 'ip')
+        rangeIpEx.text = '0.0.0.0-0.0.0.0'
 
         for ip in ignoredIp:
-            ipTree = ET.SubElement(self.tRoot, 'ip')
+            ipTree = ET.SubElement(singleIp, 'ip')
             ipTree.text = ip
 
         self.writeFile()
