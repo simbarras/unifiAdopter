@@ -29,8 +29,38 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4510c5a-9063-4c4f-a565-d73dac7ec0b4" name="Default Changelist" comment="Easter egg documentation">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="d4510c5a-9063-4c4f-a565-d73dac7ec0b4" name="Default Changelist" comment="Update documentation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/beans/Addresse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/beans/Controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/beans/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/controllers/Ctrl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/controllers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/files/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/files/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/files/ignoredIp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/helpers/DateTools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/helpers/XmlReader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/helpers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/src/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/src/beans/Addresse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/src/beans/Controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/src/beans/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/src/controllers/Ctrl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/src/controllers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/src/files/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/src/helpers/DateTools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/src/helpers/XmlReader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/src/helpers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/src/unifiAdopter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/src/workers/Counter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/src/workers/Ssh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/src/workers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/unifiAdopter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/workers/Counter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/workers/Ssh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/workers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts-3.8/unifiAdopter.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,28 +230,7 @@
       <workItem from="1597644510381" duration="18503000" />
       <workItem from="1597731499484" duration="7793000" />
       <workItem from="1597816877202" duration="14356000" />
-      <workItem from="1597901566626" duration="15438000" />
-    </task>
-    <task id="LOCAL-00019" summary="Form package for pip">
-      <created>1597311377804</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1597311377804</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Debug XmlReader.py">
-      <created>1597311921817</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1597311921817</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Debug XmlReader.py">
-      <created>1597312879196</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1597312879196</updated>
+      <workItem from="1597901566626" duration="16345000" />
     </task>
     <task id="LOCAL-00022" summary="Update setup.py for pip install">
       <created>1597312986991</created>
@@ -545,7 +554,28 @@
       <option name="project" value="LOCAL" />
       <updated>1597923687727</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Update documentation">
+      <created>1597923770296</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1597923770296</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Update documentation">
+      <created>1597923866974</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1597923866974</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Update documentation">
+      <created>1597923947325</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1597923947325</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Form package for pip" />
     <MESSAGE value="Debug XmlReader.py" />
     <MESSAGE value="Update setup.py for pip install" />
     <MESSAGE value="Update tree for debug" />
@@ -602,7 +631,8 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Documentation" />
     <MESSAGE value="Easter egg documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Easter egg documentation" />
+    <MESSAGE value="Update documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update documentation" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -629,6 +659,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="484" y="248" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog/0.0.1280.680@0.0.1280.680" timestamp="1597150131918" />
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1597924056012">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597924056012" />
     <state x="739" y="275" key="FileChooserDialogImpl" timestamp="1597651512080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -698,9 +732,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="MergeDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597087198977" />
-    <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1597241585951">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2518" y="281" key="MultipleFileMergeDialog" timestamp="1597923898161">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="2518" y="281" key="MultipleFileMergeDialog/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597923898161" />
     <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597087199015" />
     <state x="598" y="281" key="MultipleFileMergeDialog/1920.0.1280.693/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597241585951" />
     <state x="213" y="0" key="SettingsEditor" timestamp="1597817137201">
@@ -714,11 +749,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597075807574" />
-    <state x="2472" y="225" key="Vcs.Push.Dialog.v2" timestamp="1597923588855">
+    <state x="2472" y="225" key="Vcs.Push.Dialog.v2" timestamp="1597923948367">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597748283537" />
-    <state x="2472" y="225" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597923588855" />
+    <state x="2472" y="225" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597923948367" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1597839079364" />
     <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597084899930" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597088607142" />
