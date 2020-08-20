@@ -160,6 +160,6 @@ Here is the tree structure of the launch Wizard:
   - `n`: Stops the program
 - Would you like to add automatically the non-valid ip to the files ? (y/n) [n]:
   - `y`: Add all non-valid ip to the ignored ip file. Useful when you need to run the application 2 times on the same network.
-  
+
 ##Easter egg
 Write kebab83 to the first question
