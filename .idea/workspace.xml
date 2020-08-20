@@ -29,10 +29,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4510c5a-9063-4c4f-a565-d73dac7ec0b4" name="Default Changelist" comment="Update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d4510c5a-9063-4c4f-a565-d73dac7ec0b4" name="Default Changelist" comment="Documentation">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ctrl.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ctrl.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,14 +200,7 @@
       <workItem from="1597644510381" duration="18503000" />
       <workItem from="1597731499484" duration="7793000" />
       <workItem from="1597816877202" duration="14356000" />
-      <workItem from="1597901566626" duration="15247000" />
-    </task>
-    <task id="LOCAL-00017" summary="Form package for pip">
-      <created>1597306097510</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1597306097510</updated>
+      <workItem from="1597901566626" duration="15391000" />
     </task>
     <task id="LOCAL-00018" summary="Form package for pip">
       <created>1597306490268</created>
@@ -547,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597921140283</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Documentation">
+      <created>1597923587326</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1597923587326</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +577,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add the ignored IP to the start configuration" />
     <MESSAGE value="Package format" />
     <MESSAGE value="Form package for pip" />
     <MESSAGE value="Debug XmlReader.py" />
@@ -604,7 +601,8 @@
     <MESSAGE value="Configurations files restoration" />
     <MESSAGE value="Update bugs" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Documentation" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -716,11 +714,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597075807574" />
-    <state x="2472" y="225" key="Vcs.Push.Dialog.v2" timestamp="1597921142906">
+    <state x="2472" y="225" key="Vcs.Push.Dialog.v2" timestamp="1597923588855">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1597748283537" />
-    <state x="2472" y="225" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597850237258" />
+    <state x="2472" y="225" key="Vcs.Push.Dialog.v2/-1920.0.1280.693/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1597923588855" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1597839079364" />
     <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597084899930" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1536.824@0.0.1920.1040" timestamp="1597088607142" />
