@@ -135,7 +135,7 @@ You need to use the user "pi" and make the command `cd` to be in the folder `/ho
 - Remove the application:
 `sudo ./remove-unifiAdopter.sh` or `unifiA-remove`
 
-###Start wizard
+###Launch wizard
 Here is the tree structure of the launch Wizard:
 - Would you like to modify the informations ? (y/n) [n]:
   - `y`: Shows all entries and asks if they need to be changed
@@ -161,5 +161,5 @@ Here is the tree structure of the launch Wizard:
 - Would you like to add automatically the non-valid ip to the files ? (y/n) [n]:
   - `y`: Add all non-valid ip to the ignored ip file. Useful when you need to run the application 2 times on the same network.
   
-#Easter egg
+##Easter egg
 Write kebab83 to the first question

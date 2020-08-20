@@ -29,7 +29,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4510c5a-9063-4c4f-a565-d73dac7ec0b4" name="Default Changelist" comment="Documentation">
+    <list default="true" id="d4510c5a-9063-4c4f-a565-d73dac7ec0b4" name="Default Changelist" comment="Easter egg documentation">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -200,14 +200,7 @@
       <workItem from="1597644510381" duration="18503000" />
       <workItem from="1597731499484" duration="7793000" />
       <workItem from="1597816877202" duration="14356000" />
-      <workItem from="1597901566626" duration="15391000" />
-    </task>
-    <task id="LOCAL-00018" summary="Form package for pip">
-      <created>1597306490268</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1597306490268</updated>
+      <workItem from="1597901566626" duration="15438000" />
     </task>
     <task id="LOCAL-00019" summary="Form package for pip">
       <created>1597311377804</created>
@@ -545,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597923587326</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Easter egg documentation">
+      <created>1597923687727</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1597923687727</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +577,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Package format" />
     <MESSAGE value="Form package for pip" />
     <MESSAGE value="Debug XmlReader.py" />
     <MESSAGE value="Update setup.py for pip install" />
@@ -602,7 +601,8 @@
     <MESSAGE value="Update bugs" />
     <MESSAGE value="Update" />
     <MESSAGE value="Documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Documentation" />
+    <MESSAGE value="Easter egg documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Easter egg documentation" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
