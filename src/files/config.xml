@@ -1,18 +1,18 @@
 <config>
-    <addresse>
-        <ip1>10</ip1>
-        <ip2>11</ip2>
-        <ip3>100</ip3>
-        <ip4>0</ip4>
-        <mask>24</mask>
-        <rangeStart>10.11.100.0</rangeStart>
-        <rangeEnd>10.11.100.10</rangeEnd>
-    </addresse>
-    <controller>
-        <user>ubnt</user>
-        <mdp>ubnt</mdp>
-        <url>telecomservices.ch</url>
-        <port>55880</port>
-        <timeout>3</timeout>
-    </controller>
+  <addresse>
+    <ip1>10</ip1>
+    <ip2>0</ip2>
+    <ip3>0</ip3>
+    <ip4>0</ip4>
+    <mask>24</mask>
+    <rangeStart>0.0.0.0</rangeStart>
+    <rangeEnd>255.255.255.255</rangeEnd>
+  </addresse>
+  <controller>
+    <user>ubnt</user>
+    <password>ubnt</password>
+    <url>telecomservices.ch</url>
+    <port>55880</port>
+    <timeout>3</timeout>
+  </controller>
 </config>

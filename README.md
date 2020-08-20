@@ -61,7 +61,6 @@ echo 'pip3 install -e git+https://github.com/simbarras/unifiAdopter.git#egg=unif
 echo 'chmod 666 $SOURCE'files/ignoredIp.xml' >> $DESKTOP'update-unifiAdopter.sh'
 echo 'chmod 666 $SOURCE'files/config.xml' >> $DESKTOP'update-unifiAdopter.sh'
 echo 'chmod 666 $SOURCE'files/config.xml' >> $DESKTOP'update-unifiAdopter.sh'
-echo 'chmod 775 $SOURCE'files' >> $DESKTOP'update-unifiAdopter.sh'
 echo 'chown -R pi:pi /home/pi/src' >> $DESKTOP'update-unifiAdopter.sh'
 
 
@@ -71,6 +70,7 @@ echo 'rm '$DESKTOP'ignoredIp-unifiAdopter.sh' >> $DESKTOP'remove-unifiAdopter.sh
 echo 'rm '$DESKTOP'run-unifiAdopter.sh' >> $DESKTOP'remove-unifiAdopter.sh'
 echo 'rm '$DESKTOP'runNoAsk-unifiAdopter.sh' >> $DESKTOP'remove-unifiAdopter.sh'
 echo 'rm '$DESKTOP'update-unifiAdopter.sh' >> $DESKTOP'remove-unifiAdopter.sh'
+echo 'rm '$DESKTOP'restore-unifiAdopter.sh' >> $DESKTOP'remove-unifiAdopter.sh'
 echo 'rm '$DESKTOP'unifiAdopter.help' >> $DESKTOP'remove-unifiAdopter.sh'
 echo 'rmdir '$DESKTOP'src --ignore-fail-on-non-empty' >> $DESKTOP'remove-unifiAdopter.sh'
 echo 'rm '$DESKTOP'remove-unifiAdopter.sh' >> $DESKTOP'remove-unifiAdopter.sh'
@@ -81,6 +81,7 @@ echo 'unifiA-ignoredIp: Open the ignored Ip list' >> $DESKTOP'unifiAdopter.help'
 echo 'unifiA-run: Run the unifiAdopter application' >> $DESKTOP'unifiAdopter.help'
 echo 'unifiA-runNoAsk: Run the unifiAdopter application without questionning' >> $DESKTOP'unifiAdopter.help'
 echo 'unifiA-update: Update the unifiAdopter application' >> $DESKTOP'unifiAdopter.help'
+echo 'unifiA-restore: Restore the configuration files' >> $DESKTOP'unifiAdopter.help'
 echo 'unifiA-remove: Remove the unifiAdopter application' >> $DESKTOP'unifiAdopter.help'
 
 echo 'alias unifiA-="tail '$DESKTOP'unifiAdopter.help"' > $BASHALIASES
@@ -101,7 +102,6 @@ chmod 770 $DESKTOP'remove-unifiAdopter.sh'
 chmod 660 $DESKTOP'unifiAdopter.help'
 sudo chmod 666 $SOURCE'files/ignoredIp.xml'
 sudo chmod 666 $SOURCE'files/config.xml'
-sudo chmod 775 $SOURCE'files'
 sudo chown -R pi:pi /home/pi/src
 
 #rm /home/pi/install-unifiAdopter.sh

@@ -21,15 +21,20 @@ class XmlReader:
         self.tRoot = self.tree.getroot()
 
     def readIgnoredIp(self):
-        singleIp = self.tRoot.find('single')
-        rangeIp = self.tRoot.find('range')
-        for child in singleIp:
-            self.ignoredIp.append(child.text)
-        for child in rangeIp:
-            for ip in self.readRange(child.text):
-                self.ignoredIp.append(ip)
+        if os.path.exists(self.file):
+            singleIp = self.tRoot.find('single')
+            rangeIp = self.tRoot.find('range')
+            for child in singleIp:
+                self.ignoredIp.append(child.text)
+            for child in rangeIp:
+                for ip in self.readRange(child.text):
+                    self.ignoredIp.append(ip)
+        else:
+            self.ignoredIp = []
+            print(self.file + ' not found, please restore with unifiA-restore')
 
         return self.ignoredIp
+
 
     def readRange(self, range):
         rips, ripe = range.split('-', 2)
@@ -60,73 +65,87 @@ class XmlReader:
         return ignoredIp
 
     def readConfigAddresses(self):
-        adresseXml = self.tRoot.find('addresse')
-        ip1 = adresseXml.find('ip1').text
-        ip2 = adresseXml.find('ip2').text
-        ip3 = adresseXml.find('ip3').text
-        ip4 = adresseXml.find('ip4').text
-        mask = adresseXml.find('mask').text
-        rangeStart = adresseXml.find('rangeStart').text
-        rangeEnd = adresseXml.find('rangeEnd').text
-        return Addresse(ip1, ip2, ip3, ip4, mask, rangeStart, rangeEnd)
+        if os.path.exists(self.file):
+            adresseXml = self.tRoot.find('addresse')
+            ip1 = adresseXml.find('ip1').text
+            ip2 = adresseXml.find('ip2').text
+            ip3 = adresseXml.find('ip3').text
+            ip4 = adresseXml.find('ip4').text
+            mask = adresseXml.find('mask').text
+            rangeStart = adresseXml.find('rangeStart').text
+            rangeEnd = adresseXml.find('rangeEnd').text
+            result = Addresse(ip1, ip2, ip3, ip4, mask, rangeStart, rangeEnd)
+        else:
+            result = Addresse(10, 0, 0, 0, 24, '0.0.0.0', '255.255.255.255')
+            print(self.file + ' not found, please restore with unifiA-restore')
+        return result
 
     def readConfigController(self):
-        controllerXml = self.tRoot.find('controller')
-        user = controllerXml.find('user').text
-        mdp = controllerXml.find('mdp').text
-        url = controllerXml.find('url').text
-        port = controllerXml.find('port').text
-        timeout = controllerXml.find('timeout').text
-        return Controller(user, mdp, url, port, timeout)
+        if os.path.exists(self.file):
+            controllerXml = self.tRoot.find('controller')
+            user = controllerXml.find('user').text
+            mdp = controllerXml.find('mdp').text
+            url = controllerXml.find('url').text
+            port = controllerXml.find('port').text
+            timeout = controllerXml.find('timeout').text
+            result = Controller(user, mdp, url, port, timeout)
+        else:
+            result = Controller('ubnt', 'ubnt', 'telecomservices.ch', '55880', '3')
+            print(self.file + ' not found, please restore with unifiA-restore')
+        return result
 
     def writeConfig(self, addressSubnet, controllerAntenna):
         result = False
+        if os.path.exists(self.file):
+            adresseXml = self.tRoot.find('addresse')
+            adresseXml.find('ip1').text = str(addressSubnet.ip1)
+            adresseXml.find('ip2').text = str(addressSubnet.ip2)
+            adresseXml.find('ip3').text = str(addressSubnet.ip3)
+            adresseXml.find('ip4').text = str(addressSubnet.ip4)
+            adresseXml.find('mask').text = str(addressSubnet.mask)
+            adresseXml.find('rangeStart').text = str(addressSubnet.rangeStart1) + '.' + str(
+                addressSubnet.rangeStart2) + '.' + str(
+                addressSubnet.rangeStart3) + '.' + str(addressSubnet.rangeStart4)
+            adresseXml.find('rangeEnd').text = str(addressSubnet.rangeEnd1) + '.' + str(
+                addressSubnet.rangeEnd2) + '.' + str(
+                addressSubnet.rangeEnd3) + '.' + str(addressSubnet.rangeEnd4)
 
-        adresseXml = self.tRoot.find('addresse')
-        adresseXml.find('ip1').text = str(addressSubnet.ip1)
-        adresseXml.find('ip2').text = str(addressSubnet.ip2)
-        adresseXml.find('ip3').text = str(addressSubnet.ip3)
-        adresseXml.find('ip4').text = str(addressSubnet.ip4)
-        adresseXml.find('mask').text = str(addressSubnet.mask)
-        adresseXml.find('rangeStart').text = str(addressSubnet.rangeStart1) + '.' + str(
-            addressSubnet.rangeStart2) + '.' + str(
-            addressSubnet.rangeStart3) + '.' + str(addressSubnet.rangeStart4)
-        adresseXml.find('rangeEnd').text = str(addressSubnet.rangeEnd1) + '.' + str(
-            addressSubnet.rangeEnd2) + '.' + str(
-            addressSubnet.rangeEnd3) + '.' + str(addressSubnet.rangeEnd4)
+            controllerXml = self.tRoot.find('controller')
+            controllerXml.find('user').text = str(controllerAntenna.user)
+            controllerXml.find('mdp').text = str(controllerAntenna.mdp)
+            controllerXml.find('url').text = str(controllerAntenna.url)
+            controllerXml.find('port').text = str(controllerAntenna.port)
+            controllerXml.find('timeout').text = str(controllerAntenna.timeout)
 
-        controllerXml = self.tRoot.find('controller')
-        controllerXml.find('user').text = str(controllerAntenna.user)
-        controllerXml.find('mdp').text = str(controllerAntenna.mdp)
-        controllerXml.find('url').text = str(controllerAntenna.url)
-        controllerXml.find('port').text = str(controllerAntenna.port)
-        controllerXml.find('timeout').text = str(controllerAntenna.timeout)
+            self.writeFile()
 
-        self.writeFile()
-
-        result = True
+            result = True
+        else:
+            print(self.file + ' not found, please restore with unifiA-restore')
         return result
 
     def writeIgnoredIp(self, ignoredIp):
         result = False
+        if os.path.exists(self.file):
+            singleIp = self.tRoot.find('single')
+            self.tRoot.remove(singleIp)
+            rangeIp = self.tRoot.find('range')
+            self.tRoot.remove(rangeIp)
 
-        singleIp = self.tRoot.find('single')
-        self.tRoot.remove(singleIp)
-        rangeIp = self.tRoot.find('range')
-        self.tRoot.remove(rangeIp)
+            singleIp = ET.SubElement(self.tRoot, 'single')
+            rangeIp = ET.SubElement(self.tRoot, 'range')
+            rangeIpEx = ET.SubElement(rangeIp, 'ip')
+            rangeIpEx.text = '0.0.0.0-0.0.0.0'
 
-        singleIp = ET.SubElement(self.tRoot, 'single')
-        rangeIp = ET.SubElement(self.tRoot, 'range')
-        rangeIpEx = ET.SubElement(rangeIp, 'ip')
-        rangeIpEx.text = '0.0.0.0-0.0.0.0'
+            for ip in ignoredIp:
+                ipTree = ET.SubElement(singleIp, 'ip')
+                ipTree.text = ip
 
-        for ip in ignoredIp:
-            ipTree = ET.SubElement(singleIp, 'ip')
-            ipTree.text = ip
+            self.writeFile()
 
-        self.writeFile()
-
-        result = True
+            result = True
+        else:
+            print(self.file + ' not found, please restore with unifiA-restore')
         return result
 
     def writeFile(self):
