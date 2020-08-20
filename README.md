@@ -60,7 +60,6 @@ echo 'python3 '$SOURCE'unifiAdopter.py -restore' >> $DESKTOP'restore-unifiAdopte
 echo 'pip3 install -e git+https://github.com/simbarras/unifiAdopter.git#egg=unifiAdopter -U' >> $DESKTOP'update-unifiAdopter.sh'
 echo 'chmod 666 $SOURCE'files/ignoredIp.xml' >> $DESKTOP'update-unifiAdopter.sh'
 echo 'chmod 666 $SOURCE'files/config.xml' >> $DESKTOP'update-unifiAdopter.sh'
-echo 'chmod 666 $SOURCE'files/config.xml' >> $DESKTOP'update-unifiAdopter.sh'
 echo 'chown -R pi:pi /home/pi/src' >> $DESKTOP'update-unifiAdopter.sh'
 
 
