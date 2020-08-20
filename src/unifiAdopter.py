@@ -2,6 +2,8 @@ import os
 import sys
 
 from Ctrl import Ctrl
+from Restorer import Restorer
+
 
 def run():
     ctrl = Ctrl()
@@ -23,7 +25,19 @@ def run():
     else:
         print('Manually stopped')
 
+
+def restore():
+    restorer = Restorer()
+    restorer.restoreFile()
+
+
 print(sys.version)
 os.getcwd()
-
-run()
+restoreO = False
+for args in sys.argv:
+    if args == '-restore':
+        restoreO = True
+if restoreO:
+    restore()
+else:
+    run()

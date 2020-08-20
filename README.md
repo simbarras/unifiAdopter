@@ -49,17 +49,21 @@ echo '#!/bin/bash' > $DESKTOP'run-unifiAdopter.sh'
 echo '#!/bin/bash' > $DESKTOP'runNoAsk-unifiAdopter.sh'
 echo '#!/bin/bash' > $DESKTOP'update-unifiAdopter.sh'
 echo '#!/bin/bash' > $DESKTOP'remove-unifiAdopter.sh'
+echo '#!/bin/bash' > $DESKTOP'restore-unifiAdopter.sh'
 
 echo 'nano '$SOURCE'files/config.xml' >> $DESKTOP'config-unifiAdopter.sh'
 echo 'nano '$SOURCE'files/ignoredIp.xml' >> $DESKTOP'ignoredIp-unifiAdopter.sh'
 echo 'python3 '$SOURCE'unifiAdopter.py' >> $DESKTOP'run-unifiAdopter.sh'
 echo 'python3 '$SOURCE'unifiAdopter.py -noAsk' >> $DESKTOP'runNoAsk-unifiAdopter.sh'
+echo 'python3 '$SOURCE'unifiAdopter.py -restore' >> $DESKTOP'restore-unifiAdopter.sh'
 
 echo 'pip3 install -e git+https://github.com/simbarras/unifiAdopter.git#egg=unifiAdopter -U' >> $DESKTOP'update-unifiAdopter.sh'
-echo 'chmod 666 $SOURCE'files/ignoredIp.xml'' >> $DESKTOP'update-unifiAdopter.sh'
+echo 'chmod 666 $SOURCE'files/ignoredIp.xml' >> $DESKTOP'update-unifiAdopter.sh'
 echo 'chmod 666 $SOURCE'files/config.xml' >> $DESKTOP'update-unifiAdopter.sh'
 echo 'chmod 666 $SOURCE'files/config.xml' >> $DESKTOP'update-unifiAdopter.sh'
+echo 'chmod 775 $SOURCE'files' >> $DESKTOP'update-unifiAdopter.sh'
 echo 'chown -R pi:pi /home/pi/src' >> $DESKTOP'update-unifiAdopter.sh'
+
 
 echo 'pip3 uninstall unifiAdopter -y' >> $DESKTOP'remove-unifiAdopter.sh'
 echo 'rm '$DESKTOP'config-unifiAdopter.sh' >> $DESKTOP'remove-unifiAdopter.sh'
@@ -84,6 +88,7 @@ echo 'alias unifiA-config="nano '$SOURCE'files/config.xml"' >> $BASHALIASES
 echo 'alias unifiA-ignoredIp="nano '$SOURCE'files/ignoredIp.xml"' >> $BASHALIASES
 echo 'alias unifiA-run="python3 '$SOURCE'unifiAdopter.py"' >> $BASHALIASES
 echo 'alias unifiA-runNoAsk="python3 '$SOURCE'unifiAdopter.py -noAsk"' >> $BASHALIASES
+echo 'alias unifiA-restore="python3 '$SOURCE'unifiAdopter.py -restore"' >> $BASHALIASES
 echo 'alias unifiA-update="sudo '$DESKTOP'update-unifiAdopter.sh"' >> $BASHALIASES
 echo 'alias unifiA-remove="sudo '$DESKTOP'remove-unifiAdopter.sh"' >> $BASHALIASES
 
@@ -96,6 +101,7 @@ chmod 770 $DESKTOP'remove-unifiAdopter.sh'
 chmod 660 $DESKTOP'unifiAdopter.help'
 sudo chmod 666 $SOURCE'files/ignoredIp.xml'
 sudo chmod 666 $SOURCE'files/config.xml'
+sudo chmod 775 $SOURCE'files'
 sudo chown -R pi:pi /home/pi/src
 
 #rm /home/pi/install-unifiAdopter.sh
@@ -123,6 +129,9 @@ You need to use the user "pi" and make the command `cd` to be in the folder `/ho
 
 - Update the application:
 `sudo ./update-unifiAdopter.sh` or `unifiA-update`
+
+- Restore the configuration files:
+`./restore-unifiAdopter.sh` or `unifiA-restore`
 
 - Remove the application:
 `sudo ./remove-unifiAdopter.sh` or `unifiA-remove`

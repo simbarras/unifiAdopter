@@ -116,13 +116,13 @@ class Ctrl:
             if timeout:
                 self.controllerAntenna.timeout = int(timeout)
 
-            overwriteConfigFile = input('Would you like to overwrite config file ? (y/n) [n]: ')
+            overwriteConfigFile = input('Would you like to overwrite config files ? (y/n) [n]: ')
             if overwriteConfigFile.__eq__('y'):
                 if not self.configReader.writeConfig(self.addressSubnet, self.controllerAntenna):
-                    print('Error when writing the configuration file')
+                    print('Error when writing the configuration files')
 
         elif modify.__eq__('kebab83'):
-            print('Très très bon kebab')
+            print('Hummm, très bon kebab')
 
         seeAddressesIgnored = input('Would you like to see the ignored ip ? (y/n) [n]: ')
 
@@ -161,16 +161,16 @@ class Ctrl:
 
                 self.ignoredIp = self.newIgnoredIp
 
-                overwriteIpfile = input('Would you like to overwrite the ignored ip file ? (y/n) [n]: ')
+                overwriteIpfile = input('Would you like to overwrite the ignored ip files ? (y/n) [n]: ')
                 if overwriteIpfile.__eq__('y'):
                     if not self.ignoredIpReader.writeIgnoredIp(self.ignoredIp):
-                        print('Error when writing the IP file')
+                        print('Error when writing the IP files')
 
         runScan = input('Would you like to run the scan ? (y/n) [y]: ')
         if runScan.__eq__('n'):
             return False
 
-        addressesIgnored = input('Would you like to add automatically the non-valid ip to the file ? (y/n) [n]: ')
+        addressesIgnored = input('Would you like to add automatically the non-valid ip to the files ? (y/n) [n]: ')
         if addressesIgnored.__eq__('y'):
             self.addAutomaticallyIp = True
 
