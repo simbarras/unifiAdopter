@@ -1,8 +1,8 @@
 import os
 import sys
 
-from . import Ctrl
-from . import Restorer
+from Ctrl import Ctrl
+from Restorer import Restorer
 
 
 def run():
